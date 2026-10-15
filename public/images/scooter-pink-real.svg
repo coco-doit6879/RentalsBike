@@ -1,0 +1,341 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none" role="img" aria-labelledby="title-pink">
+  <title id="title-pink">VinFast Evo Grand Lite — Màu Hồng Phấn (Studio Realism)</title>
+  <defs>
+    <!-- Filters for ambient occlusion and photorealistic depth -->
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#020305" flood-opacity="0.6"/>
+    </filter>
+    <filter id="contact-shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+    </filter>
+    <filter id="panel-occlusion" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="-2" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <!-- Metallic body paint gradient -->
+    <linearGradient id="bodyPaint-pink" x1="680" y1="260" x2="680" y2="570" gradientUnits="userSpaceOnUse">
+      
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="12%" stop-color="#f5c2cb"/>
+      <stop offset="38%" stop-color="#e89fad"/>
+      <stop offset="68%" stop-color="#d48092"/>
+      <stop offset="88%" stop-color="#b65f73"/>
+      <stop offset="100%" stop-color="#8a3f51"/>
+    
+    </linearGradient>
+
+    <!-- Front fairing paint gradient with curvature highlights -->
+    <linearGradient id="frontFairing-pink" x1="770" y1="240" x2="890" y2="550" gradientUnits="userSpaceOnUse">
+      
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="12%" stop-color="#f5c2cb"/>
+      <stop offset="38%" stop-color="#e89fad"/>
+      <stop offset="68%" stop-color="#d48092"/>
+      <stop offset="88%" stop-color="#b65f73"/>
+      <stop offset="100%" stop-color="#8a3f51"/>
+    
+    </linearGradient>
+
+    <!-- Front mudguard paint gradient -->
+    <linearGradient id="mudguardPaint-pink" x1="860" y1="440" x2="940" y2="530" gradientUnits="userSpaceOnUse">
+      
+      <stop offset="0%" stop-color="#fff5f7"/>
+      <stop offset="12%" stop-color="#f5c2cb"/>
+      <stop offset="38%" stop-color="#e89fad"/>
+      <stop offset="68%" stop-color="#d48092"/>
+      <stop offset="88%" stop-color="#b65f73"/>
+      <stop offset="100%" stop-color="#8a3f51"/>
+    
+    </linearGradient>
+
+    <!-- Specular highlight strip along the shoulder line -->
+    <linearGradient id="specularGleam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="55%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="80%" stop-color="#ffffff" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Photorealistic vinyl leather seat gradient with dual stitching -->
+    <linearGradient id="leatherSeat" x1="320" y1="280" x2="320" y2="385" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#3d4044"/>
+      <stop offset="18%" stop-color="#2c2e32"/>
+      <stop offset="50%" stop-color="#1e2023"/>
+      <stop offset="82%" stop-color="#141517"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </linearGradient>
+
+    <!-- Polished chrome finish for mirrors, suspension and grab rail -->
+    <linearGradient id="chrome" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="22%" stop-color="#d0d6d9"/>
+      <stop offset="42%" stop-color="#80888d"/>
+      <stop offset="58%" stop-color="#eaf0f2"/>
+      <stop offset="78%" stop-color="#9ca4a8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+
+    <!-- Telescopic fork chrome tubes -->
+    <linearGradient id="forkChrome" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#70797d"/>
+      <stop offset="35%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#c5cdd1"/>
+      <stop offset="100%" stop-color="#4d5559"/>
+    </linearGradient>
+
+    <!-- Matte black technical plastics (floorboard, inner apron, swingarm) -->
+    <linearGradient id="blackPlastic" x1="500" y1="420" x2="500" y2="570" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#2a2e32"/>
+      <stop offset="45%" stop-color="#1c1f22"/>
+      <stop offset="100%" stop-color="#0f1113"/>
+    </linearGradient>
+
+    <!-- Radial studio floor contact shadow -->
+    <radialGradient id="floorShadow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.82"/>
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.55"/>
+      <stop offset="75%" stop-color="#000000" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Detailed 3D Wheel Definition -->
+    <g id="realisticWheel">
+      <!-- Outer tire with subtle tread profile -->
+      <circle r="115" fill="#151719"/>
+      <circle r="113" fill="#1b1e21" stroke="#25292d" stroke-width="2"/>
+      <circle r="102" stroke="#121416" stroke-width="3"/>
+      <circle r="96" stroke="#2a2f34" stroke-width="1.5" stroke-dasharray="8 6"/>
+      <!-- Deep rim well -->
+      <circle r="88" fill="#0d0f11" stroke="#363d43" stroke-width="1"/>
+      <!-- Alloy rim edge with polished lip -->
+      <circle r="85" fill="#181c20" stroke="url(#chrome)" stroke-width="3"/>
+      <!-- Multi-spoke alloy wheels -->
+      <g stroke="url(#chrome)" stroke-width="6" stroke-linecap="round">
+        <line x1="0" y1="-78" x2="0" y2="78"/>
+        <line x1="-74" y1="-25" x2="74" y2="25"/>
+        <line x1="-46" y1="63" x2="46" y2="-63"/>
+        <line x1="46" y1="63" x2="-46" y2="-63"/>
+        <line x1="74" y1="-25" x2="-74" y2="25"/>
+      </g>
+      <!-- Drilled ventilated stainless steel disc brake -->
+      <circle r="56" fill="#abb4b9" stroke="#717a7e" stroke-width="1.5" opacity="0.85"/>
+      <circle r="44" fill="none" stroke="#2a3034" stroke-width="8" stroke-dasharray="3 4"/>
+      <circle r="32" fill="#1c2023" stroke="#545d62" stroke-width="2"/>
+      <!-- Disc brake gold/silver caliper -->
+      <path d="M-42 -22 Q -55 -4 0 0" stroke="#c49a45" stroke-width="14" stroke-linecap="round" fill="none"/>
+      <!-- Central wheel hub and lug bolts -->
+      <circle r="22" fill="#2d3338" stroke="#8c979d" stroke-width="2"/>
+      <circle r="9" fill="#161a1c"/>
+      <circle cx="0" cy="-14" r="2.5" fill="#ffffff"/>
+      <circle cx="13" cy="-5" r="2.5" fill="#ffffff"/>
+      <circle cx="9" cy="11" r="2.5" fill="#ffffff"/>
+      <circle cx="-9" cy="11" r="2.5" fill="#ffffff"/>
+      <circle cx="-13" cy="-5" r="2.5" fill="#ffffff"/>
+    </g>
+
+    <!-- Dual suspension coil spring definition -->
+    <g id="chromeSpring">
+      <path d="M0 0 C -12 6, 12 14, 0 20 C -12 26, 12 34, 0 40 C -12 46, 12 54, 0 60 C -12 66, 12 74, 0 80 C -12 86, 12 94, 0 100 C -12 106, 12 114, 0 120" 
+            stroke="url(#chrome)" stroke-width="8" fill="none" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <!-- ==================== STUDIO FLOOR CONTACT SHADOWS ==================== -->
+  <g opacity="0.9">
+    <!-- Diffuse floor spread -->
+    <ellipse cx="600" cy="672" rx="490" ry="32" fill="url(#floorShadow)"/>
+    <!-- Intense direct tire contact patches -->
+    <ellipse cx="304" cy="672" rx="65" ry="12" fill="#000000" filter="url(#contact-shadow)"/>
+    <ellipse cx="916" cy="672" rx="65" ry="12" fill="#000000" filter="url(#contact-shadow)"/>
+    <!-- Center/side kickstand contact -->
+    <ellipse cx="510" cy="670" rx="30" ry="8" fill="#000000" filter="url(#contact-shadow)"/>
+  </g>
+
+  <!-- ==================== REAR ASSEMBLY & MECHANICALS ==================== -->
+  <!-- Rear swingarm and enclosed in-hub electric motor casing -->
+  <g filter="url(#panel-occlusion)">
+    <path d="M290 535 L480 500 L530 520 L480 580 L290 585 Z" fill="url(#blackPlastic)" stroke="#2b3136" stroke-width="1.5"/>
+    <!-- Rear mudguard splash shield -->
+    <path d="M195 440 C 180 470, 185 530, 220 575 L255 560 C 230 525, 225 475, 235 445 Z" fill="#17191b" stroke="#2a2e33" stroke-width="1"/>
+    <!-- Rear license plate bracket / mount (neutral matte black, no raw text) -->
+    <path d="M165 470 L195 470 L190 535 L160 535 Z" fill="#131517"/>
+    <rect x="162" y="480" width="30" height="45" rx="3" fill="#202428" stroke="#363c42" stroke-width="1"/>
+  </g>
+
+  <!-- Rear Wheel -->
+  <g transform="translate(304, 560)">
+    <use href="#realisticWheel"/>
+  </g>
+
+  <!-- Dual rear suspension chrome shock absorbers -->
+  <g transform="translate(410, 435) rotate(-22)" filter="url(#panel-occlusion)">
+    <!-- Inner damper tube -->
+    <rect x="-5" y="0" width="10" height="135" rx="4" fill="#1a1c1e"/>
+    <!-- Polished chrome spring coil -->
+    <use href="#chromeSpring" x="0" y="8"/>
+    <!-- Upper and lower mounting eyelets -->
+    <circle cx="0" cy="4" r="9" fill="url(#chrome)"/>
+    <circle cx="0" cy="130" r="9" fill="url(#chrome)"/>
+  </g>
+
+  <!-- ==================== MAIN CHASSIS & FLOORBOARD ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Bottom skid plate & central battery compartment spine -->
+    <path d="M500 550 L740 552 C 775 550, 790 530, 800 480 L825 360 L785 365 L760 480 C 750 515, 730 525, 690 525 L500 525 Z" 
+          fill="url(#blackPlastic)"/>
+    <!-- Textured non-slip rubber floorboard strips -->
+    <path d="M520 526 L720 526 L745 490 L740 485 L515 520 Z" fill="#2a2e32"/>
+    <line x1="535" y1="522" x2="710" y2="522" stroke="#131517" stroke-width="3" stroke-linecap="round"/>
+    <line x1="550" y1="516" x2="720" y2="516" stroke="#131517" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Stand deployed -->
+  <path d="M490 555 L505 670 L518 670 L505 555 Z" fill="#1b1e22" stroke="#32383e" stroke-width="1.5"/>
+
+  <!-- ==================== FRONT FORK & STEERING ==================== -->
+  <!-- Front suspension fork with chrome inner stanchion and black lower sliders -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Chrome upper stanchion -->
+    <line x1="845" y1="360" x2="905" y2="540" stroke="url(#forkChrome)" stroke-width="18" stroke-linecap="round"/>
+    <!-- Lower suspension slider -->
+    <line x1="885" y1="480" x2="916" y2="560" stroke="#1f2327" stroke-width="26" stroke-linecap="round"/>
+    <line x1="885" y1="480" x2="916" y2="560" stroke="#3a4249" stroke-width="2" stroke-linecap="round"/>
+    <!-- Front disc brake caliper mount -->
+    <path d="M900 535 L930 538 L922 575 L895 565 Z" fill="#282f34" stroke="#4d5760" stroke-width="1.5"/>
+  </g>
+
+  <!-- Front Wheel -->
+  <g transform="translate(916, 560)">
+    <use href="#realisticWheel"/>
+  </g>
+
+  <!-- Front Mudguard / Fender with curved metallic paint -->
+  <g filter="url(#panel-occlusion)">
+    <path d="M840 465 C 850 415, 915 410, 965 440 C 995 460, 1005 500, 1000 520 C 980 500, 960 480, 930 475 C 890 470, 855 480, 840 465 Z"
+          fill="url(#mudguardPaint-pink)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <!-- Specular highlight on front mudguard curve -->
+    <path d="M860 435 C 895 422, 945 435, 980 460" stroke="url(#specularGleam)" stroke-width="3" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== REAR BODY SHELL (SCULPTED METALLIC) ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Base sculpted rear fairing with curved European silhouette -->
+    <path d="M210 425 C 215 355, 275 330, 360 328 L 575 335 C 640 338, 675 385, 655 455 C 635 520, 560 550, 460 548 C 360 545, 290 540, 245 500 C 220 475, 208 450, 210 425 Z"
+          fill="url(#bodyPaint-pink)"/>
+
+    <!-- Soft interior ambient occlusion under the seat curve -->
+    <path d="M250 335 C 320 332, 480 336, 595 345 C 570 380, 500 395, 380 395 C 290 395, 240 370, 250 335 Z"
+          fill="#000000" opacity="0.18"/>
+
+    <!-- Sharp, glossy shoulder-line specular highlight -->
+    <path d="M225 415 C 255 355, 335 338, 450 340 C 530 342, 600 365, 638 410" 
+          stroke="url(#specularGleam)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+
+    <!-- Secondary reflection along lower body curve -->
+    <path d="M260 485 C 320 525, 420 535, 520 520 C 580 510, 620 480, 635 440" 
+          stroke="url(#specularGleam)" stroke-width="1.8" fill="none" stroke-opacity="0.6"/>
+
+    <!-- Rear taillight assembly (integrated red LED with chrome surround) -->
+    <path d="M198 405 C 195 390, 210 380, 225 380 L228 415 C 210 420, 199 415, 198 405 Z" 
+          fill="#8f1118" stroke="#4a080c" stroke-width="1.5"/>
+    <path d="M200 390 C 205 385, 218 385, 224 388 L223 408 C 215 410, 205 405, 200 390 Z" 
+          fill="#e6222c" filter="url(#subtle-glow)"/>
+    <!-- Clear turn signal lens -->
+    <path d="M204 410 L222 414 L220 423 L206 420 Z" fill="#ffb443" opacity="0.9"/>
+
+    <!-- Decal badge: "EVO Grand Lite" on rear flank -->
+    <g transform="translate(340, 420)">
+      <text x="0" y="0" font-family="'Inter', sans-serif" font-size="19" font-weight="800" font-style="italic" fill="#ffffff" letter-spacing="1">EVO</text>
+      <text x="50" y="-1" font-family="'Inter', sans-serif" font-size="11" font-weight="600" fill="#2d3238" letter-spacing="2">GRAND</text>
+      <text x="50" y="11" font-family="'Inter', sans-serif" font-size="9" font-weight="600" fill="#4d555e" letter-spacing="1.5">LITE</text>
+    </g>
+  </g>
+
+  <!-- ==================== PASSENGER GRAB RAIL (CHROME) ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <path d="M215 348 C 205 320, 230 300, 270 305 L285 328 C 265 325, 245 335, 240 350 Z" 
+          fill="url(#chrome)" stroke="#7a858a" stroke-width="1"/>
+    <!-- Rear grab bar extension -->
+    <path d="M225 320 C 235 308, 255 310, 275 318" stroke="url(#chrome)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <!-- ==================== CONTOURED DUAL LEATHER SEAT ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Main ergonomic saddle -->
+    <path d="M255 330 C 245 310, 265 292, 305 288 C 365 282, 460 286, 530 292 C 595 298, 650 315, 665 342 C 650 358, 620 365, 570 362 C 480 358, 380 354, 300 352 C 265 350, 250 342, 255 330 Z"
+          fill="url(#leatherSeat)" stroke="#1a1c1e" stroke-width="1.5"/>
+
+    <!-- Subtle leather grain highlight along top curve -->
+    <path d="M275 305 C 340 292, 450 295, 545 302 C 605 308, 640 322, 655 335" 
+          stroke="#70767d" stroke-width="2" fill="none" stroke-opacity="0.6"/>
+
+    <!-- Realistic twin stitching lines in silver thread -->
+    <path d="M280 328 C 360 324, 465 326, 560 332 C 605 336, 635 344, 645 350" 
+          stroke="#8c939a" stroke-width="1.2" stroke-dasharray="3 3.5" fill="none" opacity="0.75"/>
+    <path d="M280 332 C 360 328, 465 330, 560 336 C 605 340, 635 348, 645 354" 
+          stroke="#5a6066" stroke-width="1.2" stroke-dasharray="3 3.5" fill="none" opacity="0.75"/>
+  </g>
+
+  <!-- ==================== FRONT APRON & COCKPIT ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Aerodynamic front fairing / leg shield with curved surface -->
+    <path d="M780 248 C 805 235, 835 235, 860 250 C 895 272, 915 320, 910 380 C 905 435, 880 495, 825 530 L785 532 C 815 485, 830 425, 832 370 C 835 320, 810 275, 780 248 Z"
+          fill="url(#frontFairing-pink)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.5"/>
+
+    <!-- Front center highlight line tracing the aerodynamic beak -->
+    <path d="M825 248 C 865 275, 890 330, 885 400 C 880 460, 850 505, 810 530" 
+          stroke="url(#specularGleam)" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+    <!-- Front inner leg shield (matte black plastic with ignition key area) -->
+    <path d="M760 270 C 785 285, 805 330, 805 390 C 805 450, 785 490, 755 520 L745 515 C 770 475, 782 430, 780 380 C 778 330, 762 290, 745 272 Z"
+          fill="#191c1f" stroke="#333a40" stroke-width="1"/>
+
+    <!-- Chrome front grille chevron accent (signature V-wing styling) -->
+    <path d="M850 330 L 868 348 L 886 330" stroke="url(#chrome)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M854 340 L 868 354 L 882 340" stroke="url(#chrome)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+    <!-- Integrated front vertical turn signal strips -->
+    <path d="M860 380 L855 425 L863 425 L868 380 Z" fill="#ffffff" opacity="0.85" filter="url(#subtle-glow)"/>
+    <path d="M885 375 L878 420 L885 420 L892 375 Z" fill="#ffffff" opacity="0.85" filter="url(#subtle-glow)"/>
+  </g>
+
+  <!-- ==================== HANDLEBAR & RETRO CIRCULAR HEADLIGHT ==================== -->
+  <g filter="url(#panel-occlusion)">
+    <!-- Handlebar central nacelle in matching body paint -->
+    <path d="M785 240 C 785 210, 820 195, 855 200 C 885 204, 905 220, 900 245 C 875 255, 815 255, 785 240 Z"
+          fill="url(#bodyPaint-pink)" stroke="#ffffff" stroke-width="0.8" stroke-opacity="0.6"/>
+    <!-- Handlebar specular highlight -->
+    <path d="M800 210 C 830 200, 870 205, 890 220" stroke="url(#specularGleam)" stroke-width="2.5" fill="none"/>
+
+    <!-- Left and right black textured handgrips and brake levers -->
+    <line x1="785" y1="230" x2="735" y2="238" stroke="#121416" stroke-width="14" stroke-linecap="round"/>
+    <line x1="775" y1="236" x2="725" y2="242" stroke="url(#chrome)" stroke-width="4.5" stroke-linecap="round"/>
+
+    <!-- Signature Retro Round Projector Headlight with Chrome Bezel -->
+    <circle cx="885" cy="230" r="28" fill="#15191c" stroke="url(#chrome)" stroke-width="4"/>
+    <!-- Outer glass lens with realistic multi-layer concentric projector rings -->
+    <circle cx="885" cy="230" r="24" fill="#0c1824" stroke="#486a8a" stroke-width="1.5"/>
+    <circle cx="885" cy="230" r="17" fill="#14304d" stroke="#7ab8f0" stroke-width="1.2" opacity="0.85"/>
+    <!-- Central LED projector pupil with crystalline glint -->
+    <circle cx="885" cy="230" r="9" fill="#eaf4ff" filter="url(#subtle-glow)"/>
+    <circle cx="883" cy="227" r="3.5" fill="#ffffff"/>
+    <circle cx="888" cy="232" r="1.8" fill="#ffffff" opacity="0.8"/>
+
+    <!-- Dual chrome-stemmed round rearview mirrors -->
+    <!-- Far mirror -->
+    <line x1="840" y1="205" x2="815" y2="135" stroke="url(#chrome)" stroke-width="4.5" stroke-linecap="round"/>
+    <circle cx="815" cy="135" r="22" fill="#171b1e" stroke="url(#chrome)" stroke-width="3"/>
+    <circle cx="815" cy="135" r="18" fill="#2d353b" opacity="0.9"/>
+    <!-- Near mirror -->
+    <line x1="865" y1="210" x2="880" y2="130" stroke="url(#chrome)" stroke-width="5" stroke-linecap="round"/>
+    <circle cx="880" cy="130" r="24" fill="#121518" stroke="url(#chrome)" stroke-width="3.5"/>
+    <circle cx="880" cy="130" r="20" fill="#252c31" opacity="0.95"/>
+    <!-- Specular rim crescent on near mirror -->
+    <path d="M865 125 A 20 20 0 0 1 895 118" stroke="#ffffff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

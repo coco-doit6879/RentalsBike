@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Không gian trưng bày ý tưởng — studio vật liệu trung tính</title>
+<desc id="desc">Phòng trưng bày hư cấu có tường bê tông, cửa sổ cao, bục đá và xe tay ga màu ngà. Minh họa nguyên bản dùng cho bản demo, không phải ảnh một showroom hay xe VinFast thực tế.</desc>
+<defs>
+<linearGradient id="wall" x1="300" y1="0" x2="970" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#e7e3d7"/><stop offset="1" stop-color="#b6b8aa"/></linearGradient>
+<linearGradient id="floor" x1="620" y1="480" x2="620" y2="760" gradientUnits="userSpaceOnUse"><stop stop-color="#b7bbae"/><stop offset="1" stop-color="#d5d4c4"/></linearGradient>
+<linearGradient id="paint" x1="636" y1="369" x2="636" y2="544" gradientUnits="userSpaceOnUse"><stop stop-color="#f5f2e5"/><stop offset=".5" stop-color="#d4d6c7"/><stop offset="1" stop-color="#99a399"/></linearGradient>
+<linearGradient id="window" x1="40" y1="100" x2="260" y2="490" gradientUnits="userSpaceOnUse"><stop stop-color="#bac9c4"/><stop offset="1" stop-color="#647f7a"/></linearGradient>
+</defs>
+<path fill="#c6c8ba" d="M0 0h1200v760H0z"/>
+<path d="M280 0h920v491H280Z" fill="url(#wall)"/>
+<path d="m0 0 280 61v430L0 586Z" fill="#a3b1a5"/>
+<path d="m0 586 280-95h920v269H0Z" fill="url(#floor)"/>
+<path d="M280 61 0 0h1200v61Z" fill="#eeeadd"/>
+<path d="M316 75h659" stroke="#8d998e" stroke-width="3"/><path d="M325 80h641" stroke="#f6f2e8" stroke-width="4"/>
+<path d="M331 78v40m622-40v40" stroke="#69796d" stroke-width="2"/>
+<path d="M327 117h9v17h-9Zm622 0h9v17h-9Z" fill="#53655b"/>
+<path d="M30 91 231 128v321L30 518Z" fill="#d4d8c9"/>
+<path d="m41 106 178 32v302L41 501Z" fill="url(#window)"/>
+<path d="M98 115v367m62-355v333M41 273l177-9" stroke="#d6ded1" stroke-width="7"/>
+<path d="m48 475 159-55v-36L48 431Z" fill="#afc0b2" fill-opacity=".7"/>
+<path d="m41 345 178-28m-178 95 178-51" stroke="#7f9c8f" stroke-width="2"/>
+<path d="M462 62v429M813 62v429" stroke="#aab1a0" stroke-width="1"/><path d="M280 286h920" stroke="#c1c4b3" stroke-width="1"/>
+<g fill="#a9b29f"><circle cx="307" cy="92" r="2"/><circle cx="440" cy="92" r="2"/><circle cx="484" cy="92" r="2"/><circle cx="791" cy="92" r="2"/><circle cx="836" cy="92" r="2"/><circle cx="1177" cy="92" r="2"/><circle cx="307" cy="466" r="2"/><circle cx="440" cy="466" r="2"/><circle cx="836" cy="466" r="2"/></g>
+<text x="480" y="229" fill="#566b60" font-family="Arial, sans-serif" font-size="31" letter-spacing="10">STUDIO / 01</text>
+<text x="483" y="256" fill="#748577" font-family="Arial, sans-serif" font-size="10" letter-spacing="4">ORIGINAL MOBILITY CONCEPT — DEMO</text>
+<path d="m258 500 193-10 552 91-192 33Z" fill="#dedfd0"/><path d="m258 500 553 114v21L258 520Z" fill="#a6b2a1"/><path d="m811 614 192-33v20l-192 34Z" fill="#889e8d"/>
+<path d="m44 516 161-52 315 53-245 89Z" fill="#e9e8d4" fill-opacity=".48"/>
+<path d="m205 464 14-5 361 53-60 5Z" fill="#91a697" fill-opacity=".3"/>
+<path d="m0 681 419-130m325 85 267 124m-726-44 568-102M1053 492l147 42" stroke="#a2b09e" stroke-width="1"/>
+<ellipse cx="645" cy="562" rx="227" ry="12" fill="#6f8376" fill-opacity=".35"/>
+<!-- Bespoke display scooter, no external images or brand marks. -->
+<g>
+<circle cx="488" cy="511" r="48" fill="#273535" stroke="#4b5e58" stroke-width="2"/><circle cx="797" cy="511" r="48" fill="#273535" stroke="#4b5e58" stroke-width="2"/>
+<circle cx="488" cy="511" r="33" fill="#425852" stroke="#aebcb0" stroke-width="3"/><circle cx="797" cy="511" r="33" fill="#425852" stroke="#aebcb0" stroke-width="3"/>
+<g stroke="#b4c0b4" stroke-width="4"><path d="M488 480v62m-27-47 54 32m-54 0 54-32M797 480v62m-27-47 54 32m-54 0 54-32"/></g>
+<circle cx="797" cy="511" r="21" fill="#8a9e94" stroke="#c5cbbf"/><circle cx="797" cy="511" r="6" fill="#455e55"/>
+<path d="m764 439 29 70m-232-56-68 56" stroke="#8b9f93" stroke-width="7"/>
+<path d="M449 430c20-28 51-34 103-32l86 10-21 52-53 25c-19-35-64-48-104-13l-25-7Z" fill="url(#paint)" stroke="#8b9c8c" stroke-width="1.5"/>
+<path d="m454 429 104-8 57 13" stroke="#f6f4e6" stroke-width="2"/>
+<path d="m468 448 84-5 45 14-17 13-47-11" stroke="#b3bca9" stroke-width="1.5"/>
+<path d="m621 435 26 3-20 58 89 1 32-100 24 6-20 100-34 23-111-2-21-15Z" fill="#2c4039" stroke="#687e70" stroke-width="1.5"/>
+<path d="m619 513 98 2 20-15" stroke="#9aa997" stroke-width="2"/>
+<path d="m748 358 29 2 27 48-17 72-41 32-31 6 25-51 17-60Z" fill="url(#paint)" stroke="#96a38f" stroke-width="1.5"/>
+<path d="m771 374 17 35-11 50-29 38" stroke="#f5f4e3" stroke-width="2"/>
+<path d="M758 466c26-19 57-17 87 1v11c-29-14-57-11-76 7l-17-6Z" fill="url(#paint)" stroke="#96a38f"/>
+<path d="m746 358-4-16 11-12 32 3 21 15-4 15-28 3Z" fill="url(#paint)" stroke="#96a38f"/>
+<path d="m790 344 13 7-2 9-15 1-4-8Z" fill="#e9ebd9" stroke="#70897b"/>
+<path d="m744 342-34-4" stroke="#354d41" stroke-width="7" stroke-linecap="round"/>
+<path d="m751 331-15-30-20-10m62 40 11-32 17-12" stroke="#a6b7a6" stroke-width="3"/>
+<ellipse cx="708" cy="288" rx="15" ry="8" fill="#40594d" stroke="#97af9e"/>
+<ellipse cx="813" cy="284" rx="15" ry="8" fill="#40594d" stroke="#97af9e"/>
+<path d="M466 395c17-12 54-12 81-9l65 2c13 2 24 8 30 16l-18 6-151-5Z" fill="#2c3c35" stroke="#53685a"/>
+<path d="m478 394 124 5" stroke="#748679"/>
+<path d="m444 434-12 5-3 17 12-2" fill="#ac7661"/>
+<path d="m510 512 73-16" stroke="#536c60" stroke-width="12"/>
+</g>
+<path d="m1015 431 88 5-11 121-68-9Z" fill="#607968"/><path d="m1023 439 71 5-1 38-73-8Z" fill="#a8b5a0"/>
+<path d="m1034 450 50 4m-50 8 31 3" stroke="#576f60" stroke-width="2"/>
+<path d="m1055 550 36 4 11 8-55-5Z" fill="#4a6655"/>
+<path d="M1126 392h74v112h-60Z" fill="#8f9e87"/><path d="M1121 389h79v13h-77Z" fill="#b0bba1"/>
+<path d="M1160 389c-41-48-47-98-26-131 27 27 35 73 26 131Zm8 0c-9-70 7-125 32-144v94Z" fill="#6f886f"/>
+<path d="M1164 389c11-71-5-101-7-155 25 20 34 64 7 155Z" fill="#8fa184"/>
+<text x="48" y="716" fill="#5b7362" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">SHOWROOM STUDY / FICTIONAL SPACE</text>
+</svg>

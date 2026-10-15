@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Nhịp phố buổi sớm — kiến trúc và xe ý tưởng</title>
+<desc id="desc">Một góc phố hư cấu với mặt tiền bê tông, cửa kính, tán cây và xe tay ga màu cobalt. Minh họa vector nguyên bản cho nội dung demo, không phải địa điểm hay sản phẩm thật.</desc>
+<defs>
+<linearGradient id="glass" x1="332" y1="180" x2="574" y2="566" gradientUnits="userSpaceOnUse"><stop stop-color="#657a7d"/><stop offset="1" stop-color="#283a40"/></linearGradient>
+<linearGradient id="paint" x1="687" y1="478" x2="687" y2="615" gradientUnits="userSpaceOnUse"><stop stop-color="#7294eb"/><stop offset=".45" stop-color="#315bc6"/><stop offset="1" stop-color="#243e87"/></linearGradient>
+</defs>
+<path fill="#e5e1d6" d="M0 0h1200v760H0z"/>
+<path d="M0 70h202v502H0Z" fill="#b4bbb3"/><path d="m0 70 202-53v53Z" fill="#cbd0c5"/>
+<path d="M34 122h114v385H34Z" fill="#88968d"/><path d="M44 132h94v365H44Z" fill="#a2ada2"/>
+<g stroke="#d1d5c7" stroke-width="4"><path d="M44 171h94M44 212h94M44 253h94M44 294h94M44 335h94M44 376h94M44 417h94M44 458h94"/></g>
+<path d="M183 0h626v573H183Z" fill="#d0cec2"/><path d="M809 0h217v573H809Z" fill="#b4b8ad"/><path d="M1026 0h174v573h-174Z" fill="#c4c5b8"/>
+<path d="M219 0h16v573h-16Z" fill="#e8e4d8"/><path d="M704 0h48v573h-48Z" fill="#e3ded0"/>
+<path d="M235 0h469v126H235Z" fill="#c4c3b6"/><path d="m235 125 469 1-36 28H235Z" fill="#aeb3a7"/>
+<path d="M283 184h366v389H283Z" fill="#3a4b4b"/><path d="M294 196h344v367H294Z" fill="url(#glass)"/>
+<path d="m294 196 344 198v57L294 256Z" fill="#a3b4af" fill-opacity=".18"/><path d="m294 443 344-125v26L294 473Z" fill="#c9d4c9" fill-opacity=".15"/>
+<path d="M460 196v368" stroke="#b0b7aa" stroke-width="8"/><path d="M295 454h343" stroke="#788d84" stroke-width="4"/>
+<path d="M472 356v57" stroke="#c8cec2" stroke-width="4" stroke-linecap="round"/>
+<path d="M331 227h83v144h-83Z" stroke="#a7b3a6" stroke-opacity=".3"/><path d="M496 238h103v102H496Z" stroke="#a7b3a6" stroke-opacity=".3"/>
+<text x="332" y="421" fill="#c6cfc2" font-family="Arial, sans-serif" font-size="13" letter-spacing="5">ATELIER / DEMO</text>
+<path d="M282 565h369v15H282Z" fill="#a7ad9e"/><path d="M267 580h400v15H267Z" fill="#bbc0b2"/>
+<path d="M847 66h141v197H847Z" fill="#65776f"/><path d="M857 76h121v177H857Z" fill="#88968a"/><path d="M918 77v175" stroke="#b8c0ae" stroke-width="5"/>
+<path d="M847 328h141v198H847Z" fill="#879689"/><path d="M862 342h111v168H862Z" fill="#9aa696"/>
+<g stroke="#b8c1ad" stroke-width="4"><path d="M862 366h111M862 390h111M862 414h111M862 438h111M862 462h111M862 486h111"/></g>
+<path d="M1026 124h174v13h-174ZM1026 300h174v13h-174ZM1026 476h174v13h-174Z" fill="#a8b09f"/>
+<path d="M0 595h1200v165H0Z" fill="#babeb0"/><path d="M0 653h1200v107H0Z" fill="#a7afa3"/><path d="M0 645h1200v9H0Z" fill="#d2d3c3"/>
+<path d="m0 712 1200-2M298 655l-34 105m471-105 58 105" stroke="#899a8b" stroke-width="2"/>
+<path d="m1044 584-324 51 132 18 348-13v-56Z" fill="#7c8c7b" fill-opacity=".3"/>
+<path d="m1100 592-7-284 10-161" stroke="#666f5d" stroke-width="19"/><path d="m1092 353-69-134m75 73 63-126" stroke="#6f785f" stroke-width="10"/>
+<path d="M961 92c-30 50-11 94 37 106-31 46-3 93 46 85 35 46 97 22 104-11 58 19 104-26 86-65 42-30 28-93-20-105 0-52-59-80-95-54-26-49-92-48-111-7-35-12-62 17-47 51Z" fill="#7e8e73"/>
+<path d="M981 96c24 31 55 39 89 32m2 89c25-23 62-27 100-17m-70-105 3 73" stroke="#a4b199" stroke-width="3" stroke-linecap="round"/>
+<path d="M1137 78c27 18 40 41 44 68m-163 63c16 10 31 12 49 9" stroke="#5d745e" stroke-width="4" stroke-linecap="round"/>
+<path d="M56 566h91l-10 65H67Z" fill="#747f6c"/><path d="M61 564h83v10H61Z" fill="#a2ad93"/>
+<path d="M100 568c-39-51-48-98-32-129 31 18 40 64 32 129Zm7-1c-2-66 21-111 51-119 7 41-17 82-51 119Z" fill="#6f8368"/>
+<path d="M100 569c-2-80-22-113-9-143 25 26 29 77 9 143Z" fill="#88987a"/>
+<!-- Small original concept scooter, consistent with the large studio model. -->
+<ellipse cx="669" cy="645" rx="235" ry="10" fill="#758578" fill-opacity=".35"/>
+<g stroke-linejoin="round">
+<g fill="#242f34" stroke="#46585d" stroke-width="2"><circle cx="511" cy="601" r="44"/><circle cx="807" cy="601" r="44"/></g>
+<g fill="#455961" stroke="#acb8b5" stroke-width="3"><circle cx="511" cy="601" r="29"/><circle cx="807" cy="601" r="29"/></g>
+<g stroke="#9aaaa9" stroke-width="4"><path d="m511 574 0 54m-24-40 48 26m-48 0 48-26M807 574v54m-24-40 48 26m-48 0 48-26"/></g>
+<circle cx="807" cy="601" r="18" fill="#7e9295" stroke="#b7c3be"/><circle cx="807" cy="601" r="6" fill="#33474e"/>
+<path d="m774 535 28 65m-223-54-63 53" stroke="#6b8184" stroke-width="7"/>
+<path d="M472 527c19-24 52-32 94-28l83 11-18 49-47 25c-20-29-63-41-97-12l-26-7Z" fill="url(#paint)" stroke="#314c8f" stroke-width="1.5"/>
+<path d="m479 527 97-5 45 9" stroke="#8ca9ea" stroke-width="2"/>
+<path d="m483 547 82-4 35 11-18 13-46-12" stroke="#7895d3"/>
+<path d="m630 529 23 4-21 54h88l29-93 25 4-21 97-33 20-105-4-18-15Z" fill="#2c3a40" stroke="#536973" stroke-width="1.5"/>
+<path d="m628 599 94 2 21-13" stroke="#95a5a3" stroke-width="2"/>
+<path d="m751 457 29 1 24 46-17 68-39 29-26 5 23-48 15-57Z" fill="url(#paint)" stroke="#29468f" stroke-width="1.5"/>
+<path d="m773 471 15 32-9 49-25 36" stroke="#91b0ed" stroke-width="2"/>
+<path d="M766 554c25-17 54-13 79 3v9c-30-12-52-9-68 5l-16-5Z" fill="url(#paint)" stroke="#345299"/>
+<path d="m750 458-5-14 10-13 31 3 20 13-4 14-25 3Z" fill="url(#paint)" stroke="#345299"/>
+<path d="m789 443 14 7-2 8-13 1-4-8Z" fill="#e0e6d6"/>
+<path d="m747 442-30-4" stroke="#303f45" stroke-width="7" stroke-linecap="round"/>
+<path d="m754 431-15-28-18-9m56 40 11-30 14-11" stroke="#aab9b5" stroke-width="3"/>
+<ellipse cx="714" cy="391" rx="14" ry="7" fill="#34494f" stroke="#9eafa9"/>
+<ellipse cx="807" cy="389" rx="14" ry="7" fill="#34494f" stroke="#9eafa9"/>
+<path d="M487 496c18-10 49-11 75-8l64 3c13 1 23 7 29 14l-18 6-141-5Z" fill="#2d3b40" stroke="#53646b"/>
+<path d="m501 495 111 5" stroke="#6d7e80"/>
+<path d="m476 533-11 4-3 16 11-2" fill="#b67862"/>
+<path d="m532 602 66-15" stroke="#536972" stroke-width="11"/>
+</g>
+<text x="46" y="720" fill="#4b6158" font-family="Arial, sans-serif" font-size="11" letter-spacing="3">CITY STUDY / ORIGINAL CONCEPT — DEMO</text>
+</svg>

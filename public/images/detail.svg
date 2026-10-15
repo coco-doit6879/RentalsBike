@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none" role="img" aria-labelledby="title desc">
+<title id="title">Cận cảnh vật liệu và phanh đĩa — ý tưởng studio</title>
+<desc id="desc">Minh họa nguyên bản thân xe màu ngà, càng kim loại và cụm bánh phanh đĩa trên nền than chì. Thiết kế hư cấu dùng cho bản demo, không mô tả công nghệ hay thông số của sản phẩm thật.</desc>
+<defs>
+<linearGradient id="body" x1="560" y1="0" x2="810" y2="400" gradientUnits="userSpaceOnUse"><stop stop-color="#f5f2e8"/><stop offset=".45" stop-color="#d0d0c6"/><stop offset="1" stop-color="#838f88"/></linearGradient>
+<linearGradient id="alloy" x1="620" y1="240" x2="960" y2="700" gradientUnits="userSpaceOnUse"><stop stop-color="#d9e0df"/><stop offset=".4" stop-color="#78888e"/><stop offset=".68" stop-color="#b2bfc0"/><stop offset="1" stop-color="#46545c"/></linearGradient>
+<linearGradient id="strut" x1="713" y1="274" x2="784" y2="263" gradientUnits="userSpaceOnUse"><stop stop-color="#3c464c"/><stop offset=".4" stop-color="#d0d7d5"/><stop offset=".62" stop-color="#7e8e95"/><stop offset="1" stop-color="#28363e"/></linearGradient>
+<radialGradient id="tyre"><stop offset=".68" stop-color="#333a40"/><stop offset=".84" stop-color="#0d1318"/><stop offset=".95" stop-color="#343a40"/><stop offset="1" stop-color="#11171b"/></radialGradient>
+</defs>
+<path fill="#20272b" d="M0 0h1200v760H0z"/>
+<path d="M0 669h1200" stroke="#394248"/><path d="M79 0v760" stroke="#394248" stroke-opacity=".4"/>
+<circle cx="810" cy="491" r="258" fill="url(#tyre)" stroke="#485156" stroke-width="2"/>
+<circle cx="810" cy="491" r="239" stroke="#5a6467" stroke-opacity=".6"/>
+<circle cx="810" cy="491" r="204" fill="#141e25" stroke="#a6b4b7" stroke-width="9"/>
+<circle cx="810" cy="491" r="191" stroke="#4b5b64" stroke-width="3"/>
+<g transform="translate(810 491)" fill="url(#alloy)" stroke="#a3afb2" stroke-width="1.5">
+<path d="m-19-24-51-164 31-11 60 163Z"/><path d="m24-27 132-105 24 31-135 116Z"/><path d="m39 5 133 88-23 35L16 43Z"/><path d="m11 39-40 159-38-9 35-161Z"/><path d="m-35 15-157 44-9-37 162-47Z"/>
+</g>
+<circle cx="810" cy="491" r="133" fill="#7d8c91" fill-opacity=".78" stroke="#d2d8d5" stroke-width="3"/>
+<circle cx="810" cy="491" r="110" stroke="#3e505a" stroke-width="3"/>
+<circle cx="810" cy="491" r="84" stroke="#b1bfbe" stroke-width="2"/>
+<g fill="#25343d">
+<circle cx="810" cy="372" r="7"/><circle cx="870" cy="388" r="7"/><circle cx="913" cy="431" r="7"/><circle cx="929" cy="491" r="7"/><circle cx="913" cy="551" r="7"/><circle cx="870" cy="594" r="7"/><circle cx="810" cy="610" r="7"/><circle cx="750" cy="594" r="7"/><circle cx="707" cy="551" r="7"/><circle cx="691" cy="491" r="7"/><circle cx="707" cy="431" r="7"/><circle cx="750" cy="388" r="7"/>
+<circle cx="834" cy="397" r="4"/><circle cx="879" cy="422" r="4"/><circle cx="904" cy="467" r="4"/><circle cx="904" cy="515" r="4"/><circle cx="879" cy="560" r="4"/><circle cx="834" cy="585" r="4"/><circle cx="786" cy="585" r="4"/><circle cx="741" cy="560" r="4"/><circle cx="716" cy="515" r="4"/><circle cx="716" cy="467" r="4"/><circle cx="741" cy="422" r="4"/><circle cx="786" cy="397" r="4"/>
+</g>
+<path d="m656 57 128 431" stroke="#121c23" stroke-width="66"/>
+<path d="m664 59 124 427" stroke="url(#strut)" stroke-width="43"/>
+<path d="m730 292 48 163" stroke="#283944" stroke-width="57"/>
+<path d="m745 286 49 165" stroke="#96a7ac" stroke-width="5"/>
+<path d="m731 429-39 7-19 52 14 39 49-4 24-54Z" fill="#334751" stroke="#83969e" stroke-width="3"/>
+<path d="m700 449-11 39 12 19 20-2" stroke="#a3b0b2" stroke-width="4"/>
+<circle cx="810" cy="491" r="43" fill="#253740" stroke="#aabbbb" stroke-width="4"/>
+<circle cx="810" cy="491" r="20" fill="#aebcbb"/><path d="m799 491 11-8 11 8-11 8Z" fill="#455b66"/>
+<g fill="#e2e5df"><circle cx="810" cy="432" r="5"/><circle cx="866" cy="509" r="5"/><circle cx="775" cy="539" r="5"/></g>
+<path d="M442 0h407l76 145-72 134-123 35-53-108-147-29-114-75Z" fill="url(#body)" stroke="#6b7b76" stroke-width="2"/>
+<path d="m487 0 49 125 154 25 64 109" stroke="#f6f6e9" stroke-width="4"/>
+<path d="m822 0 63 147-46 85" stroke="#a5b3aa" stroke-width="2"/>
+<path d="M658 283c60-68 161-103 265-81 68 15 124 44 175 83l-6 43c-93-45-204-64-287-36l-60 56-70-12Z" fill="url(#body)" stroke="#83938b" stroke-width="3"/>
+<path d="M685 286c110-83 260-57 388 8" stroke="#f2f1e5" stroke-width="4"/>
+<path d="m688 322 52 10" stroke="#687f75" stroke-width="3"/>
+<path d="m858 98 20 3 12 30-21 6Z" fill="#b88640"/><path d="m864 104 10 2 7 20" stroke="#e3c78d" stroke-width="3"/>
+<path d="M111 143h183m-183 13h79" stroke="#899697" stroke-width="2"/>
+<text x="110" y="123" fill="#d8dcd3" font-family="Arial, sans-serif" font-size="14" letter-spacing="4">STUDIO / MATERIAL STUDY</text>
+<text x="110" y="637" fill="#c3cdc8" font-family="Arial, sans-serif" font-size="12" letter-spacing="3">CONCEPT 01 — DEMO</text>
+<path d="M320 455h227l122-32" stroke="#8d9d9e" stroke-width="1"/><circle cx="669" cy="423" r="4" fill="#d7dfd7"/>
+<text x="110" y="449" fill="#c5ceca" font-family="Arial, sans-serif" font-size="12" letter-spacing="2">DETAIL / 01</text>
+</svg>

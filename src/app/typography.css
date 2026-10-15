@@ -1,0 +1,1191 @@
+@import "@fontsource-variable/inter";
+/* Modern rental type system. Loaded last to replace the tiny showroom scale. */
+:root {
+  --font-body: "Inter Variable", Inter, Arial, sans-serif;
+  --font-display: "Inter Variable", Inter, Arial, sans-serif;
+}
+body {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  font-optical-sizing: auto;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+  line-height: 1.16;
+}
+p {
+  text-wrap: pretty;
+}
+.muted {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  line-height: 1.7;
+}
+.section-title {
+  font-size: clamp(34px, 3.9vw, 58px);
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  line-height: 1.17;
+}
+.section-description {
+  font-size: 16px;
+  max-width: 680px;
+  margin-top: 24px;
+}
+.section-heading {
+  margin-bottom: 40px;
+  align-items: end;
+}
+.text-link {
+  font-size: 14px;
+  gap: 16px;
+  min-height: 48px;
+}
+.btn,
+.hero-ctas > .btn,
+.home-bottom-cta .btn,
+.technology-copy .btn,
+.pricing-card .btn,
+.package-card > .btn {
+  font-size: 14px;
+  min-height: 54px;
+  font-weight: 600;
+  padding: 15px 22px;
+  gap: 20px;
+  line-height: 1.5;
+}
+.btn svg {
+  flex-shrink: 0;
+}
+.data-note {
+  font-size: 12px;
+  line-height: 1.8;
+  color: #596357;
+}
+.wordmark {
+  font-size: 25px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+.wordmark span {
+  font-weight: 450;
+}
+.wordmark i {
+  font-family: var(--font-body);
+  font-size: 8px !important;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+.site-header {
+  height: 96px;
+  padding-inline: 40px;
+  gap: 24px;
+}
+.desktop-nav {
+  gap: 23px;
+}
+.desktop-nav > a {
+  font-size: 14px;
+  font-weight: 500;
+}
+.header-actions {
+  gap: 12px;
+}
+.site-header .header-cta {
+  font-size: 13px;
+  min-height: 46px;
+  padding-inline: 18px;
+  gap: 16px;
+  font-weight: 600;
+}
+.site-header .language-switch {
+  font-size: 12px;
+  gap: 5px;
+}
+.language-switch button {
+  font-weight: 500;
+  opacity: 1;
+}
+.language-switch button:not([aria-pressed="true"]) {
+  color: #505a54;
+}
+.on-hero .language-switch button:not([aria-pressed="true"]) {
+  color: #c3cbc6;
+}
+.page-wrapper {
+  padding-top: 96px;
+}
+.breadcrumb {
+  font-size: 12px;
+  min-height: 76px;
+}
+.page-intro h1 {
+  font-size: clamp(42px, 5.1vw, 76px);
+  max-width: 1040px;
+  line-height: 1.12;
+}
+.page-intro .muted {
+  font-size: 17px;
+  max-width: 760px;
+}
+.page-intro .eyebrow {
+  font-size: 12px;
+}
+.page-intro {
+  padding-bottom: 65px;
+}
+/* Larger editorial hero, deliberately readable before decorative details. */
+.hero {
+  height: auto;
+  min-height: 880px;
+  padding: 170px 56px 155px;
+  align-items: center;
+}
+.hero-copy {
+  width: 59%;
+  padding-bottom: 0;
+}
+.hero-copy > .eyebrow {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  max-width: 650px;
+}
+.hero-model {
+  font-size: 15px;
+  margin-top: 40px;
+  font-weight: 500;
+}
+.hero h1 {
+  font-size: clamp(54px, 4.7vw, 76px);
+  font-weight: 650;
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+  white-space: normal;
+  max-width: 800px;
+  margin-top: 18px;
+  text-wrap: balance;
+}
+.hero h1 span {
+  color: #bbc3be;
+  font-weight: 450;
+}
+.hero-description {
+  font-size: 17px;
+  max-width: 465px;
+  line-height: 1.8;
+  margin-top: 25px;
+  color: #c8ceca;
+}
+.hero-ctas {
+  margin-top: 32px;
+  max-width: 640px;
+  gap: 12px;
+}
+.hero-visual {
+  width: 58%;
+  right: -4%;
+  top: 25%;
+  height: 64%;
+}
+.hero-watermark {
+  font-size: clamp(190px, 23vw, 350px);
+  top: -15%;
+  left: 12%;
+  font-weight: 700;
+}
+.hero-product {
+  margin-top: 0;
+}
+.hero-product img {
+  filter: brightness(1.12) drop-shadow(0 24px 28px #0004);
+}
+.hero-color {
+  bottom: 0;
+  right: 15%;
+  font-size: 12px !important;
+}
+.hero-image-note {
+  bottom: 0;
+  left: 18%;
+  font-size: 10px !important;
+  max-width: 240px;
+}
+.hero-pagination > button {
+  font-size: 12px;
+  min-width: 48px;
+}
+.hero-caption {
+  font-size: 12px;
+}
+.scroll-hint {
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+.hero-bottom {
+  height: 90px;
+}
+.quick-actions {
+  min-height: 124px;
+}
+.quick-actions > a {
+  font-size: 14px;
+  font-weight: 500;
+  gap: 14px;
+}
+.quick-actions > a > svg {
+  flex-shrink: 0;
+}
+.rental-pricing > .muted {
+  font-size: 16px;
+  max-width: 800px;
+}
+.pricing-card h3 {
+  font-size: 30px;
+  font-weight: 550;
+}
+.pricing-card > strong {
+  font-size: 40px;
+  letter-spacing: -0.04em;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+}
+.pricing-card > p {
+  font-size: 14px;
+  min-height: 50px;
+}
+.pricing-card > .eyebrow {
+  font-size: 11px;
+}
+.pricing-policy h3 {
+  font-size: 28px;
+}
+.pricing-policy p {
+  font-size: 15px;
+}
+.pricing-policy strong {
+  font-size: 21px;
+  font-weight: 600;
+}
+.vehicle-card-content h2 {
+  font-size: 29px;
+  line-height: 1.2;
+}
+.vehicle-card-content > .badge {
+  font-size: 12px;
+}
+.vehicle-card-content > p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.vehicle-card-content > .text-link {
+  font-size: 14px;
+}
+.vehicle-card-content > .btn {
+  width: 100%;
+  margin-top: 9px;
+}
+.vehicle-card-content {
+  padding: 0 26px 30px;
+}
+.vehicle-card .image-slot {
+  padding-block: 8px;
+}
+.filter-bar label {
+  font-size: 13px;
+  gap: 9px;
+}
+.filter-bar select,
+.filter-bar input,
+.filter-bar > label > input {
+  font-size: 15px;
+  min-height: 50px;
+}
+.filter-bar button {
+  font-size: 14px;
+  min-height: 48px;
+}
+.vehicle-grid + .data-note {
+  font-size: 12px;
+}
+.technology-copy {
+  padding: 75px 10%;
+}
+.technology-copy .eyebrow {
+  font-size: 11px;
+}
+.technology-copy .section-title {
+  font-size: clamp(36px, 3.5vw, 52px);
+  line-height: 1.15;
+}
+.technology-copy .muted {
+  font-size: 16px;
+  max-width: none;
+  line-height: 1.8;
+}
+.tech-feature h3 {
+  font-size: 18px;
+  font-weight: 550;
+  line-height: 1.35;
+}
+.tech-feature p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.tech-feature {
+  margin-top: 30px;
+  gap: 18px;
+}
+.tech-feature > svg {
+  margin-top: 3px;
+}
+.image-slot figcaption {
+  font-size: 11px !important;
+  line-height: 1.8;
+}
+.image-index {
+  font-size: 10px;
+}
+.feature-item > span {
+  font-size: 13px;
+}
+.feature-item h2,
+.feature-item h3 {
+  font-size: 28px;
+  margin-top: 25px;
+  line-height: 1.25;
+  font-weight: 550;
+}
+.feature-item p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.lifestyle {
+  min-height: 520px;
+}
+.lifestyle-copy > .eyebrow {
+  font-size: 11px;
+}
+.lifestyle h2 {
+  font-size: clamp(40px, 4.8vw, 70px);
+  font-weight: 600;
+  line-height: 1.13;
+}
+.home-bottom-cta .eyebrow {
+  font-size: 12px;
+}
+.home-bottom-cta .hero-ctas {
+  position: static;
+}
+.home-bottom-cta .section-title {
+  max-width: 1050px;
+}
+.form-layout {
+  gap: 60px;
+  grid-template-columns: 0.85fr 1.15fr;
+}
+.form-aside h2 {
+  font-size: 35px;
+  font-weight: 550;
+}
+.form-aside p {
+  font-size: 15px;
+}
+.form-aside li {
+  font-size: 14px;
+  padding-block: 18px;
+}
+.form-aside li:before {
+  font-size: 12px;
+}
+.form-fields > legend {
+  font-size: 26px;
+  font-weight: 550;
+}
+.form-fields > label,
+.field > label,
+.form-grid label,
+.field {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.form-fields input:not([type="checkbox"]),
+.form-fields select,
+.form-fields textarea,
+.field input:not([type="checkbox"]),
+.field select,
+.field textarea {
+  font-size: 16px;
+  min-height: 54px;
+  padding: 14px 16px;
+}
+.consent-row {
+  font-size: 13px;
+  line-height: 1.8;
+}
+.consent-row > a {
+  font-size: 14px;
+}
+.field-error,
+.error {
+  font-size: 13px;
+}
+.form-success h2 {
+  font-size: 32px;
+}
+.form-success p {
+  font-size: 16px;
+}
+.notice {
+  font-size: 14px;
+  line-height: 1.8;
+  padding: 20px 24px;
+}
+.rental-form > .muted {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.model-detail {
+  padding-block: 45px 85px;
+  gap: 55px;
+}
+.model-detail h1 {
+  font-size: 72px;
+  font-weight: 650;
+}
+.model-detail p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.model-detail .model-price {
+  font-size: 30px;
+  font-weight: 600;
+}
+.model-detail .eyebrow {
+  font-size: 12px;
+}
+.color-options > button {
+  font-size: 14px;
+}
+.package-card h2 {
+  font-size: 30px;
+}
+.package-card p {
+  font-size: 16px;
+}
+.faq summary {
+  font-size: 18px;
+  line-height: 1.5;
+}
+.faq details p {
+  font-size: 16px;
+  line-height: 1.8;
+}
+.about-split h2 {
+  font-size: clamp(36px, 3.5vw, 52px);
+  line-height: 1.2;
+}
+.about-split p {
+  font-size: 16px;
+}
+.legal-content h2 {
+  font-size: 28px;
+  font-weight: 550;
+}
+.legal-content p,
+.legal-content li {
+  font-size: 16px;
+  line-height: 1.9;
+}
+.admin-card h2 {
+  font-size: 27px;
+}
+.admin-card dl,
+.admin-card p {
+  font-size: 14px;
+}
+.admin-stats dt {
+  font-size: 13px;
+}
+.admin-status {
+  font-size: 12px;
+}
+.admin-toolbar .field {
+  font-size: 14px;
+}
+.admin-card .field input,
+.admin-toolbar input,
+.admin-toolbar select {
+  font-size: 16px;
+}
+.admin-card .btn {
+  font-size: 14px;
+}
+.site-footer {
+  padding-top: 80px;
+}
+.footer-top h2 {
+  font-size: 15px;
+  font-weight: 600;
+}
+.footer-top > div:not(:first-child) > a {
+  font-size: 14px;
+}
+.footer-top > div:not(:first-child) > p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+.footer-brand p {
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 260px;
+}
+.footer-brand > .wordmark {
+  font-size: 29px;
+}
+.demo-label {
+  font-size: 10px;
+}
+.footer-bottom,
+.footer-bottom a,
+.footer-bottom button {
+  font-size: 12px;
+}
+.footer-disclaimer {
+  font-size: 12px;
+  line-height: 1.8;
+}
+.cookie-banner strong {
+  font-size: 15px;
+  font-weight: 600;
+}
+.cookie-banner p {
+  font-size: 13px;
+}
+.cookie-actions > button {
+  font-size: 13px;
+}
+.search-content > a {
+  font-size: 16px;
+}
+.mobile-nav small {
+  font-size: 12px;
+}
+@media (max-width: 1399px) {
+  .site-header {
+    padding-inline: 32px;
+    gap: 16px;
+  }
+  .site-header .desktop-nav {
+    gap: 17px;
+  }
+  .site-header .desktop-nav > a {
+    font-size: 13px;
+  }
+  .site-header .header-cta {
+    font-size: 12px;
+    gap: 10px;
+    padding-inline: 13px;
+  }
+  .site-header .header-actions {
+    gap: 8px;
+  }
+  .site-header .wordmark {
+    font-size: 23px;
+  }
+  .hero h1 {
+    font-size: clamp(54px, 4.7vw, 68px);
+  }
+  .hero {
+    padding-inline: 40px;
+  }
+  .hero-visual {
+    right: -6%;
+    width: 59%;
+  }
+  .hero-copy {
+    width: 62%;
+  }
+  .hero-caption {
+    display: none;
+  }
+  .form-layout {
+    gap: 35px;
+  }
+}
+@media (max-width: 1199px) {
+  .site-header .desktop-nav {
+    display: none;
+  }
+  .menu-toggle {
+    display: inline-flex;
+  }
+  .hero {
+    min-height: 900px;
+  }
+  .hero-copy {
+    width: 66%;
+  }
+  .hero h1 {
+    font-size: 58px;
+  }
+  .hero-description {
+    max-width: 430px;
+  }
+  .hero-visual {
+    width: 65%;
+    right: -13%;
+    top: 32%;
+    height: 59%;
+  }
+  .hero-image-note {
+    left: 30%;
+  }
+  .hero-color {
+    right: 20%;
+  }
+  .quick-actions > a {
+    font-size: 13px;
+    gap: 12px;
+  }
+  .model-detail {
+    gap: 32px;
+  }
+  .form-layout {
+    grid-template-columns: 1fr;
+  }
+  .form-aside {
+    display: none;
+  }
+  .pricing-card > strong {
+    font-size: 35px;
+  }
+  .technology-copy {
+    padding-inline: 9%;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    display: block;
+    min-height: 0;
+    padding: 150px 32px 100px;
+  }
+  .hero-copy {
+    width: 100%;
+    max-width: 700px;
+  }
+  .hero h1 {
+    font-size: 64px;
+    max-width: 700px;
+  }
+  .hero-description {
+    max-width: 580px;
+  }
+  .hero-visual {
+    position: relative;
+    inset: auto;
+    width: min(100%, 680px);
+    height: auto;
+    min-height: 330px;
+    margin: 10px auto 35px;
+    display: block;
+  }
+  .hero-product {
+    margin: 0;
+  }
+  .hero-watermark {
+    top: 0;
+    font-size: 220px;
+    left: 20%;
+  }
+  .hero-image-note {
+    left: 8%;
+    bottom: 0;
+  }
+  .hero-color {
+    right: 5%;
+    bottom: 0;
+  }
+  .hero-product img {
+    max-height: 470px;
+    object-fit: contain;
+  }
+  .hero-bottom {
+    left: 32px;
+    right: 32px;
+  }
+  .technology {
+    grid-template-columns: 1fr;
+  }
+  .technology-visual {
+    height: 400px;
+  }
+  .technology-copy {
+    padding: 55px 40px;
+  }
+  .technology-copy .section-title {
+    font-size: 44px;
+  }
+  .technology-copy .muted {
+    max-width: 640px;
+  }
+  .quick-actions > a {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .quick-actions > a > svg:last-child {
+    display: none;
+  }
+}
+@media (max-width: 700px) {
+  .site-header {
+    height: 88px;
+    padding-inline: 18px;
+    gap: 8px;
+  }
+  .site-header .wordmark {
+    font-size: 19px;
+  }
+  .site-header .wordmark i {
+    display: none;
+  }
+  .site-header .language-switch {
+    font-size: 11px;
+    gap: 4px;
+  }
+  .site-header .language-switch button {
+    padding-inline: 2px;
+  }
+  .site-header .header-actions {
+    gap: 0;
+  }
+  .site-header .icon-button {
+    min-width: 36px;
+    min-height: 44px;
+  }
+  .site-header .header-cta {
+    display: none;
+  }
+  .page-wrapper {
+    padding-top: 88px;
+  }
+  .breadcrumb {
+    font-size: 12px;
+    min-height: 64px;
+    line-height: 1.6;
+  }
+  .hero {
+    padding: 137px 22px 95px;
+  }
+  .hero-copy > .eyebrow {
+    font-size: 10px;
+    line-height: 1.8;
+    max-width: 330px;
+  }
+  .hero-model {
+    font-size: 13px;
+    margin-top: 28px;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 10.5vw, 54px);
+    line-height: 1.1;
+    letter-spacing: -0.052em;
+    margin-top: 17px;
+  }
+  .hero h1 span {
+    font-weight: 450;
+  }
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.75;
+    max-width: 100%;
+    margin-top: 24px;
+  }
+  .hero-ctas {
+    gap: 12px;
+    margin-top: 28px;
+    max-width: none;
+  }
+  .hero-ctas > .btn {
+    font-size: 14px;
+    min-height: 52px;
+    padding: 14px 18px;
+    gap: 16px;
+    flex: 1 1 220px;
+  }
+  .hero-visual {
+    min-height: 0;
+    margin: 28px -10px 25px;
+    width: calc(100% + 20px);
+    padding-bottom: 27px;
+  }
+  .hero-watermark {
+    font-size: 50vw;
+    left: 15%;
+    top: 0;
+  }
+  .hero-product img {
+    max-height: none;
+  }
+  .hero-image-note {
+    font-size: 9px !important;
+    max-width: 200px;
+    left: 4%;
+    line-height: 1.6;
+    bottom: 0;
+  }
+  .hero-color {
+    font-size: 10px !important;
+    right: 4%;
+    bottom: 0;
+    gap: 7px;
+  }
+  .color-line {
+    display: none;
+  }
+  .hero-bottom {
+    left: 22px;
+    right: 22px;
+    height: 70px;
+  }
+  .hero-pagination > button {
+    font-size: 12px;
+    min-width: 44px;
+  }
+  .hero-arrows > button {
+    min-width: 40px;
+  }
+  .rental-quick {
+    width: calc(100% - 40px);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 0;
+    padding-inline: 0;
+    overflow: visible;
+  }
+  .rental-quick > a {
+    min-height: 110px;
+    border-bottom: 1px solid var(--line);
+  }
+  .rental-quick > a:nth-child(2n):after {
+    display: none;
+  }
+  .quick-actions > a {
+    font-size: 13px;
+    padding: 20px 12px;
+  }
+  .section {
+    padding-block: 66px;
+  }
+  .section-title {
+    font-size: clamp(32px, 8.5vw, 42px);
+    line-height: 1.18;
+    font-weight: 600;
+  }
+  .section-heading .eyebrow,
+  .eyebrow,
+  .home-bottom-cta .eyebrow {
+    font-size: 11px;
+  }
+  .section-heading > .text-link {
+    font-size: 14px;
+  }
+  .section-description,
+  .electric-heading > .muted {
+    font-size: 16px;
+  }
+  .btn,
+  .text-link,
+  .technology-copy .btn,
+  .home-bottom-cta .btn,
+  .pricing-card .btn,
+  .package-card > .btn {
+    font-size: 14px;
+  }
+  .technology-visual {
+    height: 315px;
+  }
+  .technology-copy {
+    padding: 40px 22px 52px;
+  }
+  .technology-copy .section-title {
+    font-size: 37px;
+    line-height: 1.2;
+  }
+  .technology-copy .eyebrow {
+    font-size: 11px;
+  }
+  .technology-copy .muted {
+    font-size: 16px;
+  }
+  .tech-feature h3 {
+    font-size: 18px;
+  }
+  .tech-feature p {
+    font-size: 14px;
+  }
+  .feature-item h2,
+  .feature-item h3 {
+    font-size: 27px;
+  }
+  .feature-item p {
+    font-size: 16px;
+  }
+  .lifestyle h2 {
+    font-size: 42px;
+    line-height: 1.13;
+  }
+  .lifestyle-copy > .eyebrow {
+    font-size: 11px;
+    max-width: 320px;
+  }
+  .home-bottom-cta .section-title {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .home-bottom-cta .hero-ctas > .btn {
+    flex-basis: 220px;
+  }
+  .page-intro {
+    padding-block: 25px 42px;
+  }
+  .page-intro h1 {
+    font-size: 42px;
+    line-height: 1.13;
+  }
+  .page-intro .muted {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 23px;
+  }
+  .page-intro .eyebrow {
+    font-size: 11px;
+  }
+  .filter-bar label {
+    min-width: 100%;
+    font-size: 13px;
+  }
+  .filter-bar select,
+  .filter-bar input {
+    font-size: 16px;
+  }
+  .filter-bar button {
+    font-size: 14px;
+    min-height: 48px;
+  }
+  .vehicle-card-content h2 {
+    font-size: 28px;
+  }
+  .vehicle-card-content > .badge {
+    font-size: 12px;
+  }
+  .vehicle-card-content > p {
+    font-size: 23px;
+  }
+  .vehicle-card-content > .btn {
+    font-size: 14px;
+  }
+  .vehicle-card-content > .text-link {
+    font-size: 14px;
+  }
+  .vehicle-card-content {
+    padding: 0 24px 27px;
+  }
+  .vehicle-card .image-slot {
+    padding-inline: 10px;
+  }
+  .pricing-card {
+    padding: 27px;
+  }
+  .pricing-card > strong {
+    font-size: 38px;
+  }
+  .pricing-card h3 {
+    font-size: 30px;
+  }
+  .pricing-card > p {
+    font-size: 14px;
+    min-height: 0;
+  }
+  .pricing-policy {
+    padding: 26px;
+    gap: 28px;
+  }
+  .pricing-policy h3 {
+    font-size: 26px;
+  }
+  .pricing-policy p {
+    font-size: 15px;
+  }
+  .rental-pricing > .muted {
+    font-size: 16px;
+  }
+  .data-note,
+  .footer-disclaimer {
+    font-size: 12px;
+  }
+  .model-detail {
+    padding-block: 30px 55px;
+    gap: 30px;
+  }
+  .model-detail h1 {
+    font-size: 52px;
+  }
+  .model-detail p {
+    font-size: 16px;
+  }
+  .model-detail .model-price {
+    font-size: 27px;
+  }
+  .model-detail .text-link {
+    font-size: 14px;
+  }
+  .color-options > button {
+    font-size: 13px;
+  }
+  .form-fields {
+    gap: 20px;
+  }
+  .form-fields > legend {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .form-fields > label,
+  .field {
+    font-size: 14px;
+  }
+  .form-fields input:not([type="checkbox"]),
+  .form-fields select,
+  .form-fields textarea,
+  .field input:not([type="checkbox"]),
+  .field select {
+    font-size: 16px;
+  }
+  .consent-row {
+    font-size: 13px;
+  }
+  .rental-form > .muted {
+    font-size: 16px;
+  }
+  .notice {
+    font-size: 14px;
+    padding: 18px;
+  }
+  .faq summary {
+    font-size: 17px;
+    padding-block: 8px;
+  }
+  .faq details p {
+    font-size: 16px;
+  }
+  .about-split h2 {
+    font-size: 35px;
+    line-height: 1.2;
+  }
+  .about-split p {
+    font-size: 16px;
+  }
+  .package-card h2 {
+    font-size: 29px;
+  }
+  .package-card p {
+    font-size: 16px;
+  }
+  .legal-content h2 {
+    font-size: 26px;
+  }
+  .legal-content p,
+  .legal-content li {
+    font-size: 16px;
+  }
+  .site-footer {
+    padding-top: 55px;
+  }
+  .footer-top {
+    gap: 30px 20px;
+  }
+  .footer-top h2 {
+    font-size: 15px;
+  }
+  .footer-top > div:not(:first-child) > a {
+    font-size: 14px;
+  }
+  .footer-top > div:not(:first-child) > p {
+    font-size: 14px;
+  }
+  .footer-brand p {
+    font-size: 16px;
+  }
+  .footer-bottom,
+  .footer-bottom a,
+  .footer-bottom button {
+    font-size: 12px;
+  }
+  .footer-bottom > div {
+    column-gap: 20px;
+    row-gap: 0;
+  }
+  .demo-label {
+    font-size: 10px;
+  }
+  .cookie-banner strong {
+    font-size: 14px;
+  }
+  .cookie-banner p {
+    font-size: 12px;
+  }
+  .cookie-actions > button {
+    font-size: 12px;
+  }
+  .search-content > a {
+    font-size: 15px;
+  }
+  .admin-card h2 {
+    font-size: 25px;
+  }
+  .admin-card dl,
+  .admin-card p {
+    font-size: 14px;
+  }
+  .admin-card dd {
+    max-width: 62%;
+  }
+  .admin-stats dt {
+    font-size: 12px;
+  }
+  .admin-status {
+    font-size: 12px;
+  }
+}
+@media (max-width: 359px) {
+  .site-header {
+    padding-inline: 12px;
+    gap: 4px;
+  }
+  .site-header .wordmark {
+    font-size: 17px;
+  }
+  .site-header .language-switch {
+    font-size: 10px;
+  }
+  .site-header .icon-button {
+    min-width: 32px;
+  }
+  .hero h1 {
+    font-size: 40px;
+  }
+  .pricing-card > strong {
+    font-size: 34px;
+  }
+}
