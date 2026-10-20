@@ -8,11 +8,11 @@ import {
   rentalSteps,
   rentalFaqs,
   rentalPrivacy,
-  pickupLocations,
 } from "@/data/rental-content";
 import { RentalCatalog } from "./rental-catalog";
 import { RentalPricing } from "./rental-pricing";
 import { RentalForm } from "./rental-form";
+import { RentalLocations } from "./rental-locations";
 import { ImageSlot, Arrow } from "./primitives";
 export function RentalPage({ section }: { section: string }) {
   const { t } = useLanguage();
@@ -95,38 +95,7 @@ export function RentalPage({ section }: { section: string }) {
             </Link>
           </>
         )}
-        {section === "locations" && (
-          <>
-            <p className="notice">
-              {t(
-                "Dịch vụ cho thuê xe hiện phục vụ tại Khu đô thị Vinhomes Grand Park, TP. Thủ Đức, TP. Hồ Chí Minh. Vui lòng liên hệ và đặt lịch trước khi đến nhận xe.",
-                "Rental service is available at Vinhomes Grand Park, Thu Duc City, Ho Chi Minh City. Please contact us in advance before arrival.",
-              )}
-            </p>
-            <div className="package-grid" style={{ maxWidth: "560px", margin: "0 auto" }}>
-              {pickupLocations.map((l) => (
-                <article className="package-card" key={l.id} style={{ textAlign: "center" }}>
-                  <MapPin size={28} aria-hidden="true" style={{ margin: "0 auto 12px", color: "#16a34a" }} />
-                  <h2>{t(l.vi, l.en)}</h2>
-                  <p>
-                    {t(
-                      "Khu đô thị Vinhomes Grand Park, Phường Long Bình & Phường Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh.",
-                      "Vinhomes Grand Park, Long Binh & Long Thanh My Ward, Thu Duc City, Ho Chi Minh City.",
-                    )}
-                  </p>
-                  <Link
-                    className="btn btn-primary"
-                    href={`/rent?pickup=${l.id}`}
-                    style={{ marginTop: "16px" }}
-                  >
-                    {t("Đăng ký nhận xe tại đây", "Rent scooter here")}
-                    <Arrow />
-                  </Link>
-                </article>
-              ))}
-            </div>
-          </>
-        )}
+        {section === "locations" && <RentalLocations />}
         {section === "about" && (
           <>
             <div className="about-split">
