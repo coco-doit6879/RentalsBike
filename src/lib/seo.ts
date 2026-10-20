@@ -11,7 +11,7 @@ export function pageMetadata(
     description,
     alternates: { canonical: path },
     openGraph: {
-      title: `${title} | Evo Lite Showroom`,
+      title: `${title} | MS TAM Rentals`,
       description,
       url: path,
       locale: "vi_VN",
@@ -21,7 +21,7 @@ export function pageMetadata(
           url: "/og-image.svg",
           width: 1200,
           height: 630,
-          alt: "Evo Lite Showroom — concept demo",
+          alt: "MS TAM Rentals — Thuê xe điện",
         },
       ],
     },
