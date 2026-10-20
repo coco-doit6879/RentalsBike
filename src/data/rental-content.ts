@@ -36,12 +36,12 @@ export const rentalRoutes: Record<
       "From choosing a scooter to pickup: clear information, considered choices.",
   },
   locations: {
-    vi: "Điểm khởi đầu của hành trình.",
-    en: "Where your journey begins.",
+    vi: "Điểm nhận xe tại TP. Hồ Chí Minh.",
+    en: "Pickup location in Ho Chi Minh City.",
     descriptionVi:
-      "Chọn khu vực nhận xe mong muốn. Địa chỉ cụ thể sẽ được xác nhận khi tư vấn.",
+      "Dịch vụ cho thuê xe phục vụ tại Khu đô thị Vinhomes Grand Park, TP. Thủ Đức, TP. Hồ Chí Minh.",
     descriptionEn:
-      "Choose your preferred pickup area. The exact address will be confirmed by the team.",
+      "Rental service is available at Vinhomes Grand Park, Thu Duc City, Ho Chi Minh City.",
   },
   about: {
     vi: "Tự do khám phá, nhẹ nhàng di chuyển.",
@@ -69,9 +69,11 @@ export const rentalRoutes: Record<
   },
 };
 export const pickupLocations = [
-  { id: "hcm", vi: "TP. Hồ Chí Minh", en: "Ho Chi Minh City" },
-  { id: "hanoi", vi: "Hà Nội", en: "Hanoi" },
-  { id: "danang", vi: "Đà Nẵng", en: "Da Nang" },
+  {
+    id: "hcm",
+    vi: "Vinhomes Grand Park — TP. Hồ Chí Minh",
+    en: "Vinhomes Grand Park — Ho Chi Minh City",
+  },
 ];
 export const rentalSteps = [
   {

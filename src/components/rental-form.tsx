@@ -26,7 +26,7 @@ export function RentalForm() {
       email: "",
       phone: "",
       vehicleId: "",
-      pickup: undefined,
+      pickup: "hcm",
       rentalPlan: undefined,
       startDate: "",
       endDate: "",
@@ -149,7 +149,10 @@ export function RentalForm() {
       vehicles.find((item) => item.id === submittedValues.vehicleId);
     const vehicleName = vehicle ? vehicle.name : submittedValues.vehicleId;
     const cities: Record<string, { vi: string; en: string }> = {
-      hcm: { vi: "TP. Hồ Chí Minh", en: "Ho Chi Minh City" },
+      hcm: {
+        vi: "Vinhomes Grand Park (TP. Thủ Đức, TP. HCM)",
+        en: "Vinhomes Grand Park (Thu Duc City, HCMC)",
+      },
       hanoi: { vi: "Hà Nội", en: "Hanoi" },
       danang: { vi: "Đà Nẵng", en: "Da Nang" },
     };
@@ -328,14 +331,14 @@ export function RentalForm() {
           {fieldError("rentalPlan")}
         </label>
         <label htmlFor="rental-pickup">
-          {t("Thành phố nhận xe", "Pickup city")}
+          {t("Điểm nhận xe", "Pickup city")}
           <select {...fieldProps("pickup")} {...register("pickup")} required>
-            <option value="">{t("Chọn thành phố", "Choose a city")}</option>
             <option value="hcm">
-              {t("TP. Hồ Chí Minh", "Ho Chi Minh City")}
+              {t(
+                "Vinhomes Grand Park (TP. Thủ Đức, TP. HCM)",
+                "Vinhomes Grand Park (Thu Duc City, HCMC)",
+              )}
             </option>
-            <option value="hanoi">{t("Hà Nội", "Hanoi")}</option>
-            <option value="danang">{t("Đà Nẵng", "Da Nang")}</option>
           </select>
           {fieldError("pickup")}
         </label>

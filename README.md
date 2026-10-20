@@ -59,6 +59,6 @@ Browser suite mới chỉ chạy `rental.spec.ts` và `rental-submit.spec.ts`; c
 
 ## Cần hoàn thiện trước ra mắt
 
-Ảnh hiện là concept tự tạo, không phải xe Evo Lite thực tế. Điểm nhận Hà Nội/Đà Nẵng/TPHCM đang minh họa; cần chốt khu vực phục vụ. Chưa có SMS/email, thanh toán, kho xe/khóa lịch hay hợp đồng điện tử. Cần bổ sung doanh nghiệp, địa chỉ/hotline, retention và privacy pháp lý, điều kiện thuê/giấy phép/bảo hiểm. Không dùng câu “legal for foreigners” như cam kết pháp lý chưa kiểm chứng.
+Ảnh hiện là concept tự tạo, không phải xe Evo Lite thực tế. Điểm nhận xe cố định tại Khu đô thị Vinhomes Grand Park, TP. Thủ Đức, TP. Hồ Chí Minh. Chưa có SMS/email, thanh toán, kho xe/khóa lịch hay hợp đồng điện tử. Cần bổ sung doanh nghiệp, địa chỉ/hotline, retention và privacy pháp lý, điều kiện thuê/giấy phép/bảo hiểm. Không dùng câu “legal for foreigners” như cam kết pháp lý chưa kiểm chứng.
 
 Demo noindex được giữ. Tài liệu: [docs/RENTAL-MIGRATION.md](docs/RENTAL-MIGRATION.md), [docs/BACKEND.md](docs/BACKEND.md), [docs/ASSETS.md](docs/ASSETS.md). Tài liệu REPLACEMENTS của showroom cũ chỉ là lịch sử, ưu tiên migration/backend hiện tại.

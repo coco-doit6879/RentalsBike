@@ -24,7 +24,7 @@ const planLabels: Record<string, string> = {
 };
 
 const pickupLabels: Record<string, string> = {
-  hcm: "TP. Hồ Chí Minh",
+  hcm: "Vinhomes Grand Park (TP. Thủ Đức, TP. HCM)",
   hanoi: "Hà Nội",
   danang: "Đà Nẵng",
 };

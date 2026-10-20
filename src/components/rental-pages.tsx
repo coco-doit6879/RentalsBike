@@ -99,26 +99,27 @@ export function RentalPage({ section }: { section: string }) {
           <>
             <p className="notice">
               {t(
-                "Các khu vực dưới đây là lựa chọn minh họa. Điểm nhận, giờ hoạt động và khả năng giao xe chưa được xác minh. Không có bản đồ hoặc địa chỉ thực tế.",
-                "The areas below are sample preferences. Pickup points, opening hours and delivery options have not been verified. No actual map or street addresses are provided.",
+                "Dịch vụ cho thuê xe hiện phục vụ tại Khu đô thị Vinhomes Grand Park, TP. Thủ Đức, TP. Hồ Chí Minh. Vui lòng liên hệ và đặt lịch trước khi đến nhận xe.",
+                "Rental service is available at Vinhomes Grand Park, Thu Duc City, Ho Chi Minh City. Please contact us in advance before arrival.",
               )}
             </p>
-            <div className="package-grid">
-              {pickupLocations.map((l, i) => (
-                <article className="package-card" key={l.id}>
-                  <MapPin size={24} aria-hidden="true" />
+            <div className="package-grid" style={{ maxWidth: "560px", margin: "0 auto" }}>
+              {pickupLocations.map((l) => (
+                <article className="package-card" key={l.id} style={{ textAlign: "center" }}>
+                  <MapPin size={28} aria-hidden="true" style={{ margin: "0 auto 12px", color: "#16a34a" }} />
                   <h2>{t(l.vi, l.en)}</h2>
                   <p>
                     {t(
-                      "Địa chỉ nhận xe sẽ được tư vấn sau khi xác nhận khu vực phục vụ.",
-                      "Pickup details will be provided once the service area has been confirmed.",
+                      "Khu đô thị Vinhomes Grand Park, Phường Long Bình & Phường Long Thạnh Mỹ, TP. Thủ Đức, TP. Hồ Chí Minh.",
+                      "Vinhomes Grand Park, Long Binh & Long Thanh My Ward, Thu Duc City, Ho Chi Minh City.",
                     )}
                   </p>
                   <Link
-                    className="btn btn-outline"
+                    className="btn btn-primary"
                     href={`/rent?pickup=${l.id}`}
+                    style={{ marginTop: "16px" }}
                   >
-                    {t("Yêu cầu nhận xe tại đây", "Enquire about pickup here")}
+                    {t("Đăng ký nhận xe tại đây", "Rent scooter here")}
                     <Arrow />
                   </Link>
                 </article>
