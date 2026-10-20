@@ -68,7 +68,6 @@ export const pinkPhotos: ScooterPhoto[] = [
 
 export const scooterVideo = {
   srcMp4: "/media/evo-grand-lite/scooter-walkaround.mp4",
-  srcWebm: "/media/evo-grand-lite/scooter-walkaround.webm",
   poster: "/media/evo-grand-lite/video-poster.webp",
-  durationSec: 14,
+  durationSec: 23,
 };

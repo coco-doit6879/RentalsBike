@@ -203,8 +203,8 @@ export function RentalPage({ section }: { section: string }) {
               <h2>{t("02. Giá và điều kiện", "02. Rates and conditions")}</h2>
               <p>
                 {t(
-                  "Giá thuê được công bố tại trang Bảng giá: từ 150.000đ/ngày, cọc 2.000.000đ, phí trễ 100.000đ giờ đầu và 50.000đ mỗi giờ tiếp theo. Điều kiện hoàn cọc, giấy tờ, quyền điều khiển xe, bảo hiểm và trách nhiệm thiệt hại cần được thống nhất trước khi nhận xe.",
-                  "Published rental packages start at 150,000 VND/day, with a 2,000,000 VND deposit and late fees of 100,000 VND for the first hour and 50,000 VND per additional hour. Deposit refund conditions, documents, riding eligibility, insurance and damage responsibilities must be agreed before pickup.",
+                  "Giá thuê được công bố tại trang Bảng giá: từ 400.000đ/3 ngày, cọc 1.000.000đ, phí trễ 100.000đ giờ đầu và 50.000đ mỗi giờ tiếp theo. Điều kiện hoàn cọc, giấy tờ, quyền điều khiển xe, bảo hiểm và trách nhiệm thiệt hại cần được thống nhất trước khi nhận xe.",
+                  "Published rental packages start at 400,000 VND/3 days, with a 1,000,000 VND deposit and late fees of 100,000 VND for the first hour and 50,000 VND per additional hour. Deposit refund conditions, documents, riding eligibility, insurance and damage responsibilities must be agreed before pickup.",
                 )}
               </p>
             </section>

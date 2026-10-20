@@ -7,9 +7,9 @@ export const rentalRoutes: Record<
     vi: "Bảng giá cho hành trình của bạn.",
     en: "Rental rates for your journey.",
     descriptionVi:
-      "Chọn gói từ một ngày đến một năm. Giá thuê và điều kiện theo bảng giá đã cung cấp.",
+      "Chọn gói từ 3 ngày đến một năm. Giá thuê và điều kiện theo bảng giá đã cung cấp.",
     descriptionEn:
-      "Choose a rental package from one day to one year. Rates and conditions follow the supplied rate sheet.",
+      "Choose a rental package from three days to one year. Rates and conditions follow the supplied rate sheet.",
   },
   models: {
     vi: "Chọn xe cho hành trình của bạn.",
@@ -111,9 +111,9 @@ export const rentalFaqs = [
     vi: "Giá thuê và tiền cọc được tính thế nào?",
     en: "What are the rental rates and deposit?",
     textVi:
-      "Giá thuê từ 150.000đ/ngày, có các gói tuần, tháng và năm. Cọc 2.000.000đ; bảng giá ghi hoàn khi kết thúc hợp đồng. Phí trả trễ 100.000đ giờ đầu, 50.000đ mỗi giờ tiếp theo. Cần xác nhận điều kiện hoàn cọc và thời gian lẻ trước khi thuê.",
+      "Giá thuê từ 400.000đ/3 ngày, có các gói tuần, tháng và năm. Cọc 1.000.000đ; bảng giá ghi hoàn khi kết thúc hợp đồng. Phí trả trễ 100.000đ giờ đầu, 50.000đ mỗi giờ tiếp theo. Cần xác nhận điều kiện hoàn cọc và thời gian lẻ trước khi thuê.",
     textEn:
-      "Rates start at 150,000 VND/day, with weekly, monthly and yearly packages. The deposit is 2,000,000 VND, stated refundable at contract end. Late fees are 100,000 VND for the first hour and 50,000 VND per subsequent hour. Confirm refund conditions and partial periods before renting.",
+      "Rates start at 400,000 VND/3 days, with weekly, monthly and yearly packages. The deposit is 1,000,000 VND, stated refundable at contract end. Late fees are 100,000 VND for the first hour and 50,000 VND per subsequent hour. Confirm refund conditions and partial periods before renting.",
   },
   {
     vi: "Khách nước ngoài có thể đăng ký không?",

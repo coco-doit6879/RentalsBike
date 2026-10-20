@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   ChevronLeft,
   ChevronRight,
@@ -20,20 +21,21 @@ import { RentalCatalog } from "./rental-catalog";
 import { RentalPricing } from "./rental-pricing";
 import { ScooterVideo } from "./scooter-video";
 import { rentalSteps } from "@/data/rental-content";
+import {ForeignRenterNotice} from "./brand";
 const slides = [
   {
     vi: "Evo Grand Lite.",
     en: "Evo Grand Lite.",
-    subVi: "Hồng phấn thanh lịch.",
-    subEn: "Blush pink elegance.",
+    subVi: "Thanh lịch từng góc nhìn.",
+    subEn: "Elegance in every detail.",
     descVi:
-      "Phiên bản hồng phấn thuộc đội xe 2 chiếc Evo Grand Lite của chúng tôi. Thiết kế thanh thoát, vận hành êm ái cho mọi hành trình.",
+      "Khám phá Evo Grand Lite với hình ảnh sản phẩm rõ nét. Đội xe cho thuê gồm hai chiếc hồng và trắng; lịch thuê được xác nhận sau khi bạn gửi yêu cầu.",
     descEn:
-      "The blush pink edition from our 2-scooter Evo Grand Lite fleet. Refined design and smooth electric performance for every journey.",
-    image: "/images/scooter-pink-real.svg",
-    colorVi: "Hồng phấn",
-    colorEn: "Blush pink",
-    hex: "#dca3ad",
+      "Discover Evo Grand Lite through clear product imagery. Our rental fleet has one pink and one white scooter; dates are confirmed after your enquiry.",
+    image: "/media/evo-grand-lite/evo-grand-lite-lavender.webp",
+    colorVi: "Tím nhạt · ảnh sản phẩm",
+    colorEn: "Lavender · product image",
+    hex: "#b8adc8",
   },
   {
     vi: "Evo Grand Lite.",
@@ -41,27 +43,13 @@ const slides = [
     subVi: "Trắng ngọc tinh tế.",
     subEn: "Pearl white elegance.",
     descVi:
-      "Phiên bản trắng ngọc thanh lịch trong đội xe. Tối giản, hiện đại, sẵn sàng cho những chuyến khám phá thành phố của bạn.",
+      "Đội xe gồm một chiếc hồng và một chiếc trắng. Chọn màu và gửi lịch thuê mong muốn để được xác nhận tình trạng xe.",
     descEn:
-      "The pearl white edition in our fleet. Minimalist, modern, and ready for your city exploration.",
-    image: "/images/scooter-white-real.svg",
-    colorVi: "Trắng ngọc",
-    colorEn: "Pearl white",
+      "Our fleet has one pink and one white scooter. Choose a colour and send your preferred dates to confirm availability.",
+    image: "/media/evo-grand-lite/evo-grand-lite-white.webp",
+    colorVi: "Trắng ngọc · ảnh sản phẩm",
+    colorEn: "Pearl white · product image",
     hex: "#eae6dc",
-  },
-  {
-    vi: "Đội xe thực tế.",
-    en: "Actual fleet.",
-    subVi: "Ảnh & video trên phố.",
-    subEn: "Real photos & video.",
-    descVi:
-      "Đội xe gồm 2 chiếc Evo Grand Lite màu hồng và trắng ngọc. Khám phá ảnh chụp thực tế và video trước khi gửi yêu cầu thuê.",
-    descEn:
-      "Our fleet features 2 Evo Grand Lite scooters in blush pink and pearl white. Explore actual photos and walkaround video before booking.",
-    image: "/media/evo-grand-lite/pink-front-34.webp",
-    colorVi: "Ảnh thực tế TP.HCM",
-    colorEn: "Actual photo HCMC",
-    hex: "#dca3ad",
   },
 ];
 export function RentalHome() {
@@ -71,7 +59,7 @@ export function RentalHome() {
   return (
     <>
       <section
-        className="hero"
+        className="hero hero-product-photo"
         aria-roledescription="carousel"
         aria-label={t("Khám phá xe cho thuê", "Explore rental scooters")}
       >
@@ -101,20 +89,20 @@ export function RentalHome() {
               <ArrowUpRight size={17} />
             </Link>
           </div>
+          <ForeignRenterNotice/>
         </div>
         <div className="hero-visual">
           <span className="hero-watermark" aria-hidden="true">
             EVO
           </span>
           <div className="hero-product" key={s.image}>
-            <ImageSlot
+            <Image
               src={s.image}
-              alt={t(
-                `Ảnh concept xe điện ${s.colorVi}, không phải xe thực tế`,
-                `Electric scooter concept in ${s.colorEn}, not an actual product photograph`,
-              )}
+              alt={t(`Evo Grand Lite ${s.colorVi}, ảnh sản phẩm do bạn cung cấp`, `Evo Grand Lite ${s.colorEn}, supplied product image`)}
+              width={852}
+              height={1130}
+              sizes="(max-width: 900px) 90vw, 42vw"
               priority
-              caption={false}
             />
           </div>
           <div className="hero-color">
@@ -123,7 +111,7 @@ export function RentalHome() {
             <span className="color-line" />
           </div>
           <p className="hero-image-note">
-            {index === 2 ? t("ẢNH CHỤP THỰC TẾ TẠI TP.HCM", "ACTUAL PHOTO IN HCMC") : t("STUDIO THIẾT KẾ CHI TIẾT", "DETAILED STUDIO RENDERING")}
+            {t("ẢNH SẢN PHẨM BẠN CUNG CẤP", "SUPPLIED PRODUCT IMAGE")}
           </p>
         </div>
         <div className="hero-bottom">
@@ -150,13 +138,13 @@ export function RentalHome() {
           <div className="hero-arrows">
             <button
               aria-label={t("Banner trước", "Previous banner")}
-              onClick={() => setIndex((index + 2) % 3)}
+              onClick={() => setIndex((index + slides.length - 1) % slides.length)}
             >
               <ChevronLeft size={19} />
             </button>
             <button
               aria-label={t("Banner tiếp theo", "Next banner")}
-              onClick={() => setIndex((index + 1) % 3)}
+              onClick={() => setIndex((index + 1) % slides.length)}
             >
               <ChevronRight size={19} />
             </button>
@@ -214,8 +202,8 @@ export function RentalHome() {
                 "One considered ride.\nEndless possibilities.",
               )}
               description={t(
-                "Giá thuê từ 150.000đ/ngày. Chọn sắc màu và thời gian thuê; tình trạng xe cần được xác nhận.",
-                "Rentals from 150,000 VND/day. Pick a colour and your preferred dates; availability is subject to confirmation.",
+                "Giá thuê từ 400.000đ/3 ngày. Chọn sắc màu và thời gian thuê; tình trạng xe cần được xác nhận.",
+                "Rentals from 400,000 VND/3 days. Pick a colour and your preferred dates; availability is subject to confirmation.",
               )}
             />
           </Reveal>

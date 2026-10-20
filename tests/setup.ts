@@ -1,6 +1,12 @@
 import "@testing-library/jest-dom/vitest";
 import { afterEach } from "vitest";
 import { cleanup } from "@testing-library/react";
+import os from "node:os";
+
+if (!process.env.TMPDIR) {
+  process.env.TMPDIR = os.tmpdir();
+}
+
 afterEach(cleanup);
 class Observer {
   observe() {}

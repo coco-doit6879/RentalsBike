@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/seo";
+export const dynamic = "force-static";
 // Keep demonstration content out of search engines. Change only after legal/data verification.
 export default function robots(): MetadataRoute.Robots {
   return {

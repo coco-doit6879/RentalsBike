@@ -135,7 +135,7 @@ export function RentalCatalog() {
               <h2>
                 {vehicle.name} · {rentalColor(vehicle.id, t)}
               </h2>
-              <p>{t("Từ 150.000 ₫ / ngày", "From 150,000 ₫ / day")}</p>
+              <p>{t("Từ 400.000 ₫ / 3 ngày", "From 400,000 ₫ / 3 days")}</p>
               <Link
                 className="btn btn-primary"
                 href={`/rent?vehicle=${vehicle.id}`}
@@ -264,7 +264,7 @@ export function RentalDetail() {
             )}
           </p>
           <p className="model-price">
-            {t("Từ 150.000 ₫ / ngày", "From 150,000 ₫ / day")}
+            {t("Từ 400.000 ₫ / 3 ngày", "From 400,000 ₫ / 3 days")}
           </p>
           <Link className="text-link" href="/pricing">
             {t("Xem bảng giá thuê", "View rental rates")} <Arrow />

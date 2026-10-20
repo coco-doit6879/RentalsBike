@@ -33,14 +33,14 @@ Các URL mua xe/lái thử/dịch vụ cũ chuyển hướng; các component cũ
 
 | Gói | Giá VND |
 |---|---:|
-| Ngày | 150.000 |
-| Tuần | 800.000 |
-| Tháng | 2.500.000 |
-| 3 tháng | 6.500.000 |
-| 6 tháng | 11.000.000 |
-| Năm | 18.000.000 |
+| 3 ngày | 400.000 |
+| Tuần | 700.000 |
+| Tháng | 2.200.000 |
+| 3 tháng | 5.700.000 |
+| 6 tháng | 10.000.000 |
+| Năm | 16.000.000 |
 
-Cọc2.000.000đ; trễ100.000đ giờ đầu,50.000đ mỗi giờ tiếp. `src/data/rental-pricing.ts` là nguồn cấu hình. Không tự tính ngày lẻ, thuế/giao xe, khấu trừ cọc hay tổng thanh toán khi chưa có quy tắc. Form lưu gói, ngày và liên hệ; không tự giữ xe hoặc thanh toán.
+Cọc 1.000.000đ; trễ 100.000đ giờ đầu, 50.000đ mỗi giờ tiếp. `src/data/rental-pricing.ts` là nguồn cấu hình. Không tự tính ngày lẻ, thuế/giao xe, khấu trừ cọc hay tổng thanh toán khi chưa có quy tắc. Form lưu gói, ngày và liên hệ; không tự giữ xe hoặc thanh toán.
 
 ## Kiểm thử
 

@@ -57,7 +57,6 @@ export function ScooterVideo() {
           onPause={() => setIsPlaying(false)}
           onEnded={() => setIsPlaying(false)}
         >
-          <source src={scooterVideo.srcWebm} type="video/webm" />
           <source src={scooterVideo.srcMp4} type="video/mp4" />
           {t("Trình duyệt không hỗ trợ video HTML5.", "Your browser does not support HTML5 video.")}
         </video>
@@ -73,7 +72,7 @@ export function ScooterVideo() {
               <Play size={28} fill="currentColor" />
             </span>
             <span className="video-play-label">
-              {t("Xem video thực tế (14s)", "Watch actual video (14s)")}
+              {t(`Xem video thực tế (${scooterVideo.durationSec}s)`, `Watch actual video (${scooterVideo.durationSec}s)`)}
             </span>
           </button>
         )}
@@ -88,7 +87,7 @@ export function ScooterVideo() {
             {isPlaying ? <Pause size={18} /> : <Play size={18} fill="currentColor" />}
           </button>
           <span className="video-meta-badge" aria-hidden="true">
-            <Eye size={14} /> {t("Quay thực tế · 14 giây", "Actual footage · 14s")}
+            <Eye size={14} /> {t(`Quay thực tế · ${scooterVideo.durationSec} giây`, `Actual footage · ${scooterVideo.durationSec}s`)}
           </span>
           <button
             type="button"

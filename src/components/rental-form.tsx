@@ -108,6 +108,9 @@ export function RentalForm() {
     "aria-invalid": !!errors[name],
     "aria-describedby": errors[name] ? `rental-${name}-error` : undefined,
   });
+  const [submittedValues, setSubmittedValues] =
+    React.useState<RentalInput | null>(null);
+
   const submit = async (values: RentalInput) => {
     setFailed(false);
     try {
@@ -128,11 +131,67 @@ export function RentalForm() {
         typeof result.status !== "string"
       )
         throw new Error("Invalid response");
+      setSubmittedValues(values);
       setReference(result.id);
     } catch {
       setFailed(true);
     }
   };
+
+  const whatsappUrl = React.useMemo(() => {
+    if (!submittedValues || !reference) return `https://wa.me/84797330518`;
+    const plan = rentalPlans.find((p) => p.id === submittedValues.rentalPlan);
+    const planText = plan
+      ? `${locale === "vi" ? plan.vi : plan.en} (${formatRentalPrice(plan.price, locale)})`
+      : submittedValues.rentalPlan;
+    const vehicle =
+      fleet.find((item) => item.id === submittedValues.vehicleId) ||
+      vehicles.find((item) => item.id === submittedValues.vehicleId);
+    const vehicleName = vehicle ? vehicle.name : submittedValues.vehicleId;
+    const cities: Record<string, { vi: string; en: string }> = {
+      hcm: { vi: "TP. Hồ Chí Minh", en: "Ho Chi Minh City" },
+      hanoi: { vi: "Hà Nội", en: "Hanoi" },
+      danang: { vi: "Đà Nẵng", en: "Da Nang" },
+    };
+    const cityText =
+      cities[submittedValues.pickup]?.[locale] || submittedValues.pickup;
+
+    const message =
+      locale === "vi"
+        ? [
+            `Xin chào MS TAM Rentals!`,
+            `Tôi muốn gửi yêu cầu thuê xe:`,
+            `• Mã yêu cầu: ${reference}`,
+            `• Khách hàng: ${submittedValues.name}`,
+            `• Số điện thoại: ${submittedValues.phone}`,
+            submittedValues.email ? `• Email: ${submittedValues.email}` : "",
+            `• Mẫu xe: ${vehicleName}`,
+            `• Gói thuê: ${planText}`,
+            `• Điểm nhận xe: ${cityText}`,
+            `• Thời gian: ${submittedValues.startDate} đến ${submittedValues.endDate}`,
+            submittedValues.note ? `• Ghi chú: ${submittedValues.note}` : "",
+          ]
+            .filter(Boolean)
+            .join("\n")
+        : [
+            `Hello MS TAM Rentals!`,
+            `I would like to request a scooter rental:`,
+            `• Reference: ${reference}`,
+            `• Name: ${submittedValues.name}`,
+            `• Phone: ${submittedValues.phone}`,
+            submittedValues.email ? `• Email: ${submittedValues.email}` : "",
+            `• Scooter: ${vehicleName}`,
+            `• Package: ${planText}`,
+            `• Pickup city: ${cityText}`,
+            `• Dates: ${submittedValues.startDate} to ${submittedValues.endDate}`,
+            submittedValues.note ? `• Note: ${submittedValues.note}` : "",
+          ]
+            .filter(Boolean)
+            .join("\n");
+
+    return `https://wa.me/84797330518?text=${encodeURIComponent(message)}`;
+  }, [submittedValues, reference, locale]);
+
   if (reference)
     return (
       <section className="form-success" role="status">
@@ -148,6 +207,40 @@ export function RentalForm() {
             "This is not a confirmed booking. We will review your enquiry and contact you about availability, a quote and next steps.",
           )}
         </p>
+        <p>
+          {t(
+            "Bạn có thể nhấn nút dưới đây để gửi trực tiếp đơn thuê qua WhatsApp cho chúng tôi:",
+            "You can tap the button below to message us directly on WhatsApp:",
+          )}
+        </p>
+        <div style={{ marginTop: "24px" }}>
+          <a
+            className="btn"
+            style={{
+              backgroundColor: "#25D366",
+              color: "#ffffff",
+              border: "none",
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "12px 24px",
+              fontSize: "1rem",
+              fontWeight: 600,
+              borderRadius: "9999px",
+              textDecoration: "none",
+              boxShadow: "0 4px 14px rgba(37, 211, 102, 0.4)",
+            }}
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>💬</span>
+            {t(
+              "Mở WhatsApp trao đổi ngay (0797 330 518)",
+              "Chat on WhatsApp now (+84 797 330 518)",
+            )}
+          </a>
+        </div>
       </section>
     );
   return (
