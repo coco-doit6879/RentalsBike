@@ -3,7 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Camera } from "lucide-react";
-import { fleet, pinkPhotos, type FleetVehicle } from "@/data/fleet";
+import { fleet, pinkPhotos, whitePhotos, type FleetVehicle } from "@/data/fleet";
 import { useLanguage } from "@/components/language";
 import { ImageSlot, Arrow } from "@/components/primitives";
 import { ScooterVideo } from "./scooter-video";
@@ -174,55 +174,52 @@ export function RentalDetail() {
 
   const vehicle = fleet.find((item) => item.id === selected) ?? fleet[0];
   const isPink = vehicle.id === "pink";
-  const currentPhoto = pinkPhotos[activePhoto] ?? pinkPhotos[0];
+  const photos = isPink ? pinkPhotos : whitePhotos;
+  const currentPhoto = photos[activePhoto] ?? photos[0];
 
   return (
     <>
       <section className="fleet-detail container">
-        {isPink ? (
-          <div className="photo-gallery">
-            <div className="gallery-main">
-              <ImageSlot
-                className="fleet-photo"
-                src={currentPhoto.src}
-                alt={t(currentPhoto.vi, currentPhoto.en)}
-                caption={false}
-                priority
-              />
-              <p className="gallery-caption muted">
-                {t(currentPhoto.vi, currentPhoto.en)}
-              </p>
-            </div>
-            <div
-              className="gallery-thumbs"
-              role="group"
-              aria-label={t("Ảnh chi tiết xe", "Scooter photo gallery")}
-            >
-              {pinkPhotos.map((photo, idx) => (
-                <button
-                  type="button"
-                  key={photo.src}
-                  className={`gallery-thumb-btn ${idx === activePhoto ? "active" : ""}`}
-                  aria-pressed={idx === activePhoto}
-                  aria-label={t(photo.vi, photo.en)}
-                  onClick={() => setActivePhoto(idx)}
-                >
-                  <Image
-                    src={photo.src}
-                    alt={t(photo.vi, photo.en)}
-                    width={160}
-                    height={120}
-                  />
-                  <span className="thumb-caption">
-                    {t(photo.vi, photo.en)}
-                  </span>
-                </button>
-              ))}
-            </div>
+        <div className="photo-gallery">
+          <div className="gallery-main">
+            <ImageSlot
+              className="fleet-photo"
+              src={currentPhoto.src}
+              alt={t(currentPhoto.vi, currentPhoto.en)}
+              caption={false}
+              priority
+            />
+            <p className="gallery-caption muted">
+              {t(currentPhoto.vi, currentPhoto.en)}
+            </p>
           </div>
-        ) : (
-          <VehicleVisual vehicle={vehicle} priority />
-        )}
+          <div
+            className="gallery-thumbs"
+            role="group"
+            aria-label={t("Ảnh chi tiết xe", "Scooter photo gallery")}
+          >
+            {photos.map((photo, idx) => (
+              <button
+                type="button"
+                key={photo.src}
+                className={`gallery-thumb-btn ${idx === activePhoto ? "active" : ""}`}
+                aria-pressed={idx === activePhoto}
+                aria-label={t(photo.vi, photo.en)}
+                onClick={() => setActivePhoto(idx)}
+              >
+                <Image
+                  src={photo.src}
+                  alt={t(photo.vi, photo.en)}
+                  width={160}
+                  height={120}
+                />
+                <span className="thumb-caption">
+                  {t(photo.vi, photo.en)}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
 
         <div className="fleet-detail-copy">
           <p className="eyebrow">{t("ĐỘI XE THỰC TẾ", "REAL OWNER FLEET")}</p>

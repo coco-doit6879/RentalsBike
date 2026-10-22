@@ -28,10 +28,6 @@ const slides = [
     en: "Evo Grand Lite.",
     subVi: "Thanh lịch từng góc nhìn.",
     subEn: "Elegance in every detail.",
-    descVi:
-      "Khám phá Evo Grand Lite với hình ảnh sản phẩm rõ nét. Đội xe cho thuê gồm hai chiếc hồng và trắng; lịch thuê được xác nhận sau khi bạn gửi yêu cầu.",
-    descEn:
-      "Discover Evo Grand Lite through clear product imagery. Our rental fleet has one pink and one white scooter; dates are confirmed after your enquiry.",
     image: "/media/evo-grand-lite/evo-grand-lite-lavender.webp",
     colorVi: "Tím nhạt · ảnh sản phẩm",
     colorEn: "Lavender · product image",
@@ -42,10 +38,6 @@ const slides = [
     en: "Evo Grand Lite.",
     subVi: "Trắng ngọc tinh tế.",
     subEn: "Pearl white elegance.",
-    descVi:
-      "Đội xe gồm một chiếc hồng và một chiếc trắng. Chọn màu và gửi lịch thuê mong muốn để được xác nhận tình trạng xe.",
-    descEn:
-      "Our fleet has one pink and one white scooter. Choose a colour and send your preferred dates to confirm availability.",
     image: "/media/evo-grand-lite/evo-grand-lite-white.webp",
     colorVi: "Trắng ngọc · ảnh sản phẩm",
     colorEn: "Pearl white · product image",
@@ -78,7 +70,7 @@ export function RentalHome() {
             <br />
             <span>{t(s.subVi, s.subEn)}</span>
           </h1>
-          <p className="hero-description">{t(s.descVi, s.descEn)}</p>
+          <ForeignRenterNotice />
           <div className="hero-ctas">
             <Link className="btn btn-light" href="/models">
               {t("Khám phá xe cho thuê", "Explore rental scooters")}
@@ -89,7 +81,6 @@ export function RentalHome() {
               <ArrowUpRight size={17} />
             </Link>
           </div>
-          <ForeignRenterNotice/>
         </div>
         <div className="hero-visual">
           <span className="hero-watermark" aria-hidden="true">

@@ -75,19 +75,14 @@ describe("VehicleVisual component", () => {
     expect(container.querySelector(".fleet-photo")).toBeInTheDocument();
   });
 
-  it("renders honest placeholder with Camera icon and update note for white scooter", () => {
+  it("renders next/image via ImageSlot for white scooter when image is present", () => {
     language.locale = "vi";
     const whiteVehicle = fleet.find((v) => v.id === "white")!;
     const { container } = render(<VehicleVisual vehicle={whiteVehicle} />);
 
-    expect(screen.getByText("Ảnh xe trắng sẽ cập nhật")).toBeInTheDocument();
-    expect(container.querySelector(".vehicle-placeholder")).toBeInTheDocument();
-    // No fake SVG image used
-    expect(container.querySelector("img")).not.toBeInTheDocument();
-
-    language.locale = "en";
-    render(<VehicleVisual vehicle={whiteVehicle} />);
-    expect(screen.getByText("White scooter photo coming soon")).toBeInTheDocument();
+    const img = screen.getByRole("img");
+    expect(img).toHaveAttribute("src", expect.stringContaining("white-front-34.webp"));
+    expect(container.querySelector(".fleet-photo")).toBeInTheDocument();
   });
 });
 
@@ -174,7 +169,7 @@ describe("RentalDetail", () => {
     expect(screen.getByTestId("scooter-video")).toBeInTheDocument();
   });
 
-  it("supports white query parameter and color button without pink gallery or video", () => {
+  it("supports white query parameter and renders white photo gallery", () => {
     window.history.replaceState({}, "", "/models/evo-grand-lite?color=white");
     language.locale = "en";
     render(<RentalDetail />);
@@ -184,12 +179,15 @@ describe("RentalDetail", () => {
       "/rent?vehicle=white",
     );
 
-    // White shows honest placeholder
-    expect(screen.getByText("White scooter photo coming soon")).toBeInTheDocument();
+    // White shows real photo gallery
+    const thumbButtons = screen.getAllByRole("button", { name: /view/i });
+    expect(thumbButtons.length).toBe(3);
+    expect(thumbButtons[0]).toHaveAttribute("aria-pressed", "true");
 
-    // No pink gallery or video
-    expect(screen.queryByTestId("scooter-video")).not.toBeInTheDocument();
-    expect(screen.queryByRole("group", { name: /gallery/i })).not.toBeInTheDocument();
+    // Switching thumbnail updates active state
+    fireEvent.click(thumbButtons[1]);
+    expect(thumbButtons[1]).toHaveAttribute("aria-pressed", "true");
+    expect(thumbButtons[0]).toHaveAttribute("aria-pressed", "false");
 
     // Clicking Pink color button restores pink gallery and video
     fireEvent.click(screen.getByRole("button", { name: /Blush pink/i }));

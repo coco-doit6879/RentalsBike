@@ -27,7 +27,7 @@ export const fleet: FleetVehicle[] = [
     colorVi: "Trắng ngọc",
     colorEn: "Pearl white",
     hex: "#eae6dc",
-    image: null,
+    image: "/media/evo-grand-lite/white-front-34.webp",
     quantity: 1,
   },
 ];
@@ -63,6 +63,24 @@ export const pinkPhotos: ScooterPhoto[] = [
     src: "/media/evo-grand-lite/pink-storage.webp",
     vi: "Khoang chứa đồ dưới yên xe",
     en: "Under-seat storage compartment",
+  },
+];
+
+export const whitePhotos: ScooterPhoto[] = [
+  {
+    src: "/media/evo-grand-lite/white-front-34.webp",
+    vi: "Toàn xe góc trước 3/4 bên trái (ảnh thực tế)",
+    en: "Front three-quarter left view (actual photo)",
+  },
+  {
+    src: "/media/evo-grand-lite/white-front.webp",
+    vi: "Góc chính diện đèn pha và mặt nạ xe (ảnh thực tế)",
+    en: "Direct front view of headlight and fascia (actual photo)",
+  },
+  {
+    src: "/media/evo-grand-lite/white-side-34.webp",
+    vi: "Toàn xe góc trước 3/4 bên phải (ảnh thực tế)",
+    en: "Front three-quarter right view (actual photo)",
   },
 ];
 
