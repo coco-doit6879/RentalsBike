@@ -117,13 +117,6 @@ export function RentalCatalog() {
         </p>
       )}
 
-      <p className="muted fleet-notice">
-        {t(
-          "Đội xe gồm 2 xe Evo Grand Lite chính chủ (hồng và trắng). Tình trạng xe phụ thuộc vào ngày thuê thực tế, không cam kết giữ chỗ trước.",
-          "Owner-confirmed fleet of 2 Evo Grand Lite scooters (pink and white). Actual availability depends on your rental dates, not an advance reservation promise.",
-        )}
-      </p>
-
       <div className="fleet-grid">
         {filtered.map((vehicle) => (
           <article className="vehicle-card" key={vehicle.id}>

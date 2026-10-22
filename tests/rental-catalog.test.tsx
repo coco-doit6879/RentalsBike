@@ -135,12 +135,12 @@ describe("RentalCatalog", () => {
     expect(screen.getAllByRole("article")).toHaveLength(2);
   });
 
-  it("explains owner-confirmed fleet and real availability without concept wording", () => {
+  it("renders catalog without concept wording", () => {
     language.locale = "en";
     render(<RentalCatalog />);
 
     expect(screen.queryByText(/Concept images and sample specifications/i)).not.toBeInTheDocument();
-    expect(screen.getByText(/Owner-confirmed fleet/i)).toBeInTheDocument();
+    expect(screen.getAllByRole("article")).toHaveLength(2);
   });
 });
 
