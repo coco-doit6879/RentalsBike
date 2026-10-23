@@ -87,5 +87,5 @@ export const whitePhotos: ScooterPhoto[] = [
 export const scooterVideo = {
   srcMp4: "/media/evo-grand-lite/scooter-walkaround.mp4",
   poster: "/media/evo-grand-lite/video-poster.webp",
-  durationSec: 23,
+  durationSec: 17,
 };

@@ -22,8 +22,8 @@ export function RentalPricing() {
       </h2>
       <p className="muted">
         {t(
-          "Giá theo gói thuê. Tình trạng xe và các khoản phát sinh cần được xác nhận trước khi nhận xe.",
-          "Rates are per rental package. Scooter availability and any additional charges must be confirmed before pickup.",
+          "Giá theo gói thuê.",
+          "Rates are per rental package. ",
         )}
       </p>
       <div className="pricing-grid">
@@ -71,12 +71,6 @@ export function RentalPricing() {
           <p>
             {t("Mỗi giờ tiếp theo: ", "Each additional hour: ")}
             <strong>{money(rentalPolicy.lateAdditionalHour)}</strong>
-          </p>
-          <p>
-            {t(
-              "Chưa có quy tắc làm tròn thời gian trễ chưa đủ một giờ. Vui lòng xác nhận trước khi thuê.",
-              "Rounding for partial late hours is not specified. Please confirm before renting.",
-            )}
           </p>
         </section>
       </div>

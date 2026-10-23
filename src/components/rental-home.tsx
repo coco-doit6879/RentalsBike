@@ -21,7 +21,7 @@ import { RentalCatalog } from "./rental-catalog";
 import { RentalPricing } from "./rental-pricing";
 import { ScooterVideo } from "./scooter-video";
 import { rentalSteps } from "@/data/rental-content";
-import {ForeignRenterNotice} from "./brand";
+import { ForeignRenterNotice } from "./brand";
 const slides = [
   {
     vi: "Evo Grand Lite.",
@@ -189,8 +189,8 @@ export function RentalHome() {
             <SectionHeading
               eyebrow={t("BỘ SƯU TẬP XE CHO THUÊ", "THE RENTAL COLLECTION")}
               title={t(
-                "Một chiếc xe tinh gọn.\nVô vàn điều để khám phá.",
-                "One considered ride.\nEndless possibilities.",
+                "Vô vàn điều để khám phá.",
+                "Endless possibilities.",
               )}
               description={t(
                 "Giá thuê từ 400.000đ/3 ngày. Chọn sắc màu và thời gian thuê; tình trạng xe cần được xác nhận.",

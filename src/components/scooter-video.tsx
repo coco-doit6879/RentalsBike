@@ -14,7 +14,7 @@ export function ScooterVideo() {
     const video = videoRef.current;
     if (!video) return;
     if (video.paused) {
-      video.play().then(() => setIsPlaying(true)).catch(() => {});
+      video.play().then(() => setIsPlaying(true)).catch(() => { });
     } else {
       video.pause();
       setIsPlaying(false);
@@ -100,12 +100,7 @@ export function ScooterVideo() {
         </div>
       </div>
 
-      <p className="data-note">
-        {t(
-          "Video tự quay thực tế chiếc xe Evo Grand Lite màu hồng thuộc đội xe. Không sử dụng video quảng cáo của hãng.",
-          "Actual self-shot video of the pink Evo Grand Lite in the fleet. Not an official brand advertisement.",
-        )}
-      </p>
+
     </section>
   );
 }
