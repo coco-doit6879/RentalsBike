@@ -87,7 +87,7 @@ describe("VehicleVisual component", () => {
 });
 
 describe("RentalCatalog", () => {
-  it("renders exactly 2 cards with '1 xe trong đội xe / 1 scooter in the fleet'", () => {
+  it("renders exactly 2 cards", () => {
     language.locale = "vi";
     render(<RentalCatalog />);
 
