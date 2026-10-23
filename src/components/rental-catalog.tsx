@@ -122,9 +122,6 @@ export function RentalCatalog() {
           <article className="vehicle-card" key={vehicle.id}>
             <VehicleVisual vehicle={vehicle} />
             <div className="vehicle-card-content">
-              <span className="badge">
-                {t("1 xe trong đội xe", "1 scooter in the fleet")}
-              </span>
               <h2>
                 {vehicle.name} · {rentalColor(vehicle.id, t)}
               </h2>

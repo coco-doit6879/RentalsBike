@@ -93,7 +93,6 @@ describe("RentalCatalog", () => {
 
     const cards = screen.getAllByRole("article");
     expect(cards).toHaveLength(2);
-    expect(screen.getAllByText("1 xe trong đội xe")).toHaveLength(2);
 
     expect(screen.getByRole("link", { name: /Xem mẫu xe.*Hồng phấn/i })).toHaveAttribute(
       "href",
