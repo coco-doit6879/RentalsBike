@@ -20,7 +20,7 @@ vi.mock("@/components/language", () => ({
 }));
 
 vi.mock("@/components/scooter-video", () => ({
-  ScooterVideo: () => <div data-testid="scooter-video">Scooter Video</div>,
+  ScooterVideo: ({ color }: { color: string }) => <div data-testid="scooter-video" data-color={color}>Scooter Video</div>,
 }));
 
 beforeEach(() => {
@@ -165,7 +165,7 @@ describe("RentalDetail", () => {
     expect(thumbButtons[0]).toHaveAttribute("aria-pressed", "false");
 
     // Video is displayed for pink
-    expect(screen.getByTestId("scooter-video")).toBeInTheDocument();
+    expect(screen.getByTestId("scooter-video")).toHaveAttribute("data-color", "pink");
   });
 
   it("supports white query parameter and renders white photo gallery", () => {
@@ -177,6 +177,8 @@ describe("RentalDetail", () => {
       "href",
       "/rent?vehicle=white",
     );
+
+    expect(screen.getByTestId("scooter-video")).toHaveAttribute("data-color", "white");
 
     // White shows real photo gallery
     const thumbButtons = screen.getAllByRole("button", { name: /view/i });

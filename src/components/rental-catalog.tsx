@@ -265,7 +265,7 @@ export function RentalDetail() {
         </div>
       </section>
 
-      {isPink && <ScooterVideo />}
+      <ScooterVideo key={vehicle.id} color={isPink ? "pink" : "white"} />
     </>
   );
 }
