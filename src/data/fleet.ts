@@ -89,3 +89,9 @@ export const scooterVideo = {
   poster: "/media/evo-grand-lite/video-poster.webp",
   durationSec: 17,
 };
+
+export const whiteScooterVideo = {
+  srcMp4: "/media/evo-grand-lite/white-showcase.mp4",
+  poster: "/media/evo-grand-lite/white-video-poster.webp",
+  durationSec: 15,
+};

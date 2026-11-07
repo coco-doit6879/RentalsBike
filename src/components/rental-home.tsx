@@ -201,14 +201,14 @@ export function RentalHome() {
           <RentalCatalog />
         </div>
       </section>
+      <section className="section">
+        <div className="container">
+          <ScooterVideo color="white" />
+        </div>
+      </section>
       <section className="section bg-soft">
         <div className="container">
           <RentalPricing />
-        </div>
-      </section>
-      <section className="section">
-        <div className="container">
-          <ScooterVideo />
         </div>
       </section>
       <section className="technology">

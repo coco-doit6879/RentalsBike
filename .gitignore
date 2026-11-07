@@ -11,3 +11,4 @@ private-data/
 .env.local
 *.MP4
 *.orig.*
+!public/media/evo-grand-lite/white-showcase.mp4
